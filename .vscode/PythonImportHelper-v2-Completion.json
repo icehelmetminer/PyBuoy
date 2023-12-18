@@ -319,6 +319,38 @@
         "documentation": {}
     },
     {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
         "label": "sys,",
         "kind": 6,
         "isExtraImport": true,
@@ -360,6 +392,14 @@
         "isExtraImport": true,
         "importPath": "datetime",
         "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
         "detail": "datetime",
         "documentation": {}
     },
@@ -2379,6 +2419,24 @@
         "documentation": {}
     },
     {
+        "label": "BuoyCamScraper",
+        "kind": 6,
+        "importPath": "clean_version",
+        "description": "clean_version",
+        "peekOfCode": "class BuoyCamScraper:\n    def __init__(self, image_directory, buoycam_ids):\n        self.image_directory = image_directory\n        self.buoycam_ids = buoycam_ids\n        os.makedirs(self.image_directory, exist_ok=True)\n    def scrape(self):\n        for buoycam_id in self.buoycam_ids:\n            self._scrape_single_buoycam(buoycam_id)\n    def _scrape_single_buoycam(self, buoycam_id):\n        url = f\"https://www.ndbc.noaa.gov/buoycam.php?station={buoycam_id}\"",
+        "detail": "clean_version",
+        "documentation": {}
+    },
+    {
+        "label": "ImageProcessor",
+        "kind": 6,
+        "importPath": "clean_version",
+        "description": "clean_version",
+        "peekOfCode": "class ImageProcessor:\n    def __init__(self, base_directory):\n        self.base_directory = base_directory\n        self.panel_directory = os.path.join(base_directory, 'panels')\n        os.makedirs(self.panel_directory, exist_ok=True)\n        self.latest_images = {}  # Dictionary to hold the latest image per buoy\n    def process_images(self):\n        image_files = glob.glob(f'{self.base_directory}/*/*.jpg')\n        for file in tqdm(image_files, desc=\"Processing images\"):\n            buoy_id = os.path.basename(os.path.dirname(file))",
+        "detail": "clean_version",
+        "documentation": {}
+    },
+    {
         "label": "scrape_noaa_buoycams",
         "kind": 2,
         "importPath": "dec17_2024",
@@ -2590,7 +2648,7 @@
         "kind": 2,
         "importPath": "dec17_2024_withedgedetect",
         "description": "dec17_2024_withedgedetect",
-        "peekOfCode": "def preprocess_and_stitch_panels(image, number_of_panels=6, strip_height=35):\n    panels = split_into_panels(image, number_of_panels)\n    processed_panels = [enhance_image(remove_bottom_strip(panel, strip_height)) for panel in panels]\n    return stitch_panels_horizontally(processed_panels)\ndef check_for_duplicate_panel(image):\n    # check the image against all the panels in the panels folder with and without enhancement or any rotation.\n    # if it matches any of them, return True and do not save the image\n    for panel in panels:\n        panel = cv2.imread(panel)\n        # panel = enhance_image(panel)",
+        "peekOfCode": "def preprocess_and_stitch_panels(image, number_of_panels=6, strip_height=35):\n    panels = split_into_panels(image, number_of_panels)\n    processed_panels = [] # Store the processed panels\n    for panel in panels:\n        #& panel = remove_bottom_strip(panel, strip_height)\n        panel = enhance_image(panel)\n        processed_panels.append(panel)\n        temp_panel = panel.copy()\n        # annotate this temp_panel with orange value\n        # orange_value = np.mean(temp_panel[:,:,2])",
         "detail": "dec17_2024_withedgedetect",
         "documentation": {}
     },
@@ -2600,6 +2658,15 @@
         "importPath": "dec17_2024_withedgedetect",
         "description": "dec17_2024_withedgedetect",
         "peekOfCode": "def check_for_duplicate_panel(image):\n    # check the image against all the panels in the panels folder with and without enhancement or any rotation.\n    # if it matches any of them, return True and do not save the image\n    for panel in panels:\n        panel = cv2.imread(panel)\n        # panel = enhance_image(panel)\n        # panel = rotate(panel, angle=180)\n        if np.array_equal(image, panel):\n            return True\n    return False",
+        "detail": "dec17_2024_withedgedetect",
+        "documentation": {}
+    },
+    {
+        "label": "check_for_duplicate_panel",
+        "kind": 2,
+        "importPath": "dec17_2024_withedgedetect",
+        "description": "dec17_2024_withedgedetect",
+        "peekOfCode": "def check_for_duplicate_panel(image):\n    # check the image against all the panels in the panels folder with and without enhancement or any rotation.\n    # if it matches any of them, return True and do not save the image\n    for panel in panels:\n        panel = cv2.imread(panel)\n        # panel = enhance_image(panel)\n        # panel = rotate(panel, angle=180)\n        if np.array_equal(image, panel):\n            print('found duplicate panel')\n            return True",
         "detail": "dec17_2024_withedgedetect",
         "documentation": {}
     },
@@ -2662,7 +2729,34 @@
         "kind": 5,
         "importPath": "dec17_2024_withedgedetect",
         "description": "dec17_2024_withedgedetect",
-        "peekOfCode": "collage = stitch_vertical(rows_to_stitch)\n# Save the collage with timestamp\ntimestamp = str(int(time.time()))\ncollage_directory = 'images/save_images'\nos.makedirs(collage_directory, exist_ok=True)\nfilename = os.path.join(collage_directory, f'collage_{timestamp}.jpg')\ncv2.imwrite(filename, collage)\nprint(f\"Collage saved to {filename}\")\n# Display the collage\ncv2.imshow('Vertical Collage', collage)",
+        "peekOfCode": "collage = stitch_vertical(rows_to_stitch)\ndef check_for_duplicate_panel(image):\n    # check the image against all the panels in the panels folder with and without enhancement or any rotation.\n    # if it matches any of them, return True and do not save the image\n    for panel in panels:\n        panel = cv2.imread(panel)\n        # panel = enhance_image(panel)\n        # panel = rotate(panel, angle=180)\n        if np.array_equal(image, panel):\n            print('found duplicate panel')",
+        "detail": "dec17_2024_withedgedetect",
+        "documentation": {}
+    },
+    {
+        "label": "timestamp",
+        "kind": 5,
+        "importPath": "dec17_2024_withedgedetect",
+        "description": "dec17_2024_withedgedetect",
+        "peekOfCode": "timestamp = str(int(time.time()))\ncollage_directory = 'images/save_images'\nos.makedirs(collage_directory, exist_ok=True)\nfilename = os.path.join(collage_directory, f'collage_{timestamp}.jpg')\ncv2.imwrite(filename, collage)\nprint(f\"Collage saved to {filename}\")\n# Display the collage\ncv2.imshow('Vertical Collage', collage)\ncv2.waitKey(0)\ncv2.destroyAllWindows()",
+        "detail": "dec17_2024_withedgedetect",
+        "documentation": {}
+    },
+    {
+        "label": "collage_directory",
+        "kind": 5,
+        "importPath": "dec17_2024_withedgedetect",
+        "description": "dec17_2024_withedgedetect",
+        "peekOfCode": "collage_directory = 'images/save_images'\nos.makedirs(collage_directory, exist_ok=True)\nfilename = os.path.join(collage_directory, f'collage_{timestamp}.jpg')\ncv2.imwrite(filename, collage)\nprint(f\"Collage saved to {filename}\")\n# Display the collage\ncv2.imshow('Vertical Collage', collage)\ncv2.waitKey(0)\ncv2.destroyAllWindows()\n# remove duplicate rows",
+        "detail": "dec17_2024_withedgedetect",
+        "documentation": {}
+    },
+    {
+        "label": "filename",
+        "kind": 5,
+        "importPath": "dec17_2024_withedgedetect",
+        "description": "dec17_2024_withedgedetect",
+        "peekOfCode": "filename = os.path.join(collage_directory, f'collage_{timestamp}.jpg')\ncv2.imwrite(filename, collage)\nprint(f\"Collage saved to {filename}\")\n# Display the collage\ncv2.imshow('Vertical Collage', collage)\ncv2.waitKey(0)\ncv2.destroyAllWindows()\n# remove duplicate rows\nfor row in rows_to_stitch:\n    if check_for_duplicate_panel(row):",
         "detail": "dec17_2024_withedgedetect",
         "documentation": {}
     },
@@ -2691,6 +2785,213 @@
         "description": "dec17_2024_withedgedetect",
         "peekOfCode": "filename = os.path.join(collage_directory, f'collage_{timestamp}.jpg')\ncv2.imwrite(filename, collage)\nprint(f\"Collage saved to {filename}\")\n# Display the collage\ncv2.imshow('Vertical Collage', collage)\ncv2.waitKey(0)\ncv2.destroyAllWindows()",
         "detail": "dec17_2024_withedgedetect",
+        "documentation": {}
+    },
+    {
+        "label": "scrape_noaa_buoycams",
+        "kind": 2,
+        "importPath": "dirty_version",
+        "description": "dirty_version",
+        "peekOfCode": "def scrape_noaa_buoycams(image_directory):\n    buoycam_url = \"https://www.ndbc.noaa.gov/buoycam.php?station={buoycam_id}\"\n    buoycam_ids = [\"45007\", \"45012\", \"46002\", \"46011\", \"46012\", \"46015\", \"46025\", \"46026\", \"46027\", \"46028\", \"46042\", \"46047\", \"46053\", \"46054\", \"46059\", \"46066\", \"46069\", \"46071\", \"46072\", \"46078\", \"46085\", \"46086\", \"46087\", \"46088\", \"46089\", \"51000\", \"51001\", \"51002\", \"51003\", \"51004\", \"51101\", \"46084\"]\n    os.makedirs(image_directory, exist_ok=True)\n    for buoycam_id in buoycam_ids:\n        url = buoycam_url.format(buoycam_id=buoycam_id)\n        response = requests.get(url)\n        if response.status_code == 200:\n            timedateofimage = datetime.datetime.utcnow().strftime(\"%Y%m%d%H%M%S\")\n            zulu_snakecased_time = re.sub(r'[^a-zA-Z0-9]', '_', timedateofimage)",
+        "detail": "dirty_version",
+        "documentation": {}
+    },
+    {
+        "label": "is_mostly_black",
+        "kind": 2,
+        "importPath": "dirty_version",
+        "description": "dirty_version",
+        "peekOfCode": "def is_mostly_black(image, threshold=10):\n    return np.mean(image) < threshold\ndef stitch_panels_horizontally(panels):\n    max_height = max(panel.shape[0] for panel in panels)\n    panels_resized = [cv2.resize(panel, (panel.shape[1], max_height), interpolation=cv2.INTER_LINEAR) for panel in panels]\n    return np.concatenate(panels_resized, axis=1)\ndef stitch_vertical(rows):\n    max_width = max(row.shape[1] for row in rows)\n    rows_resized = []\n    for row in rows:",
+        "detail": "dirty_version",
+        "documentation": {}
+    },
+    {
+        "label": "stitch_panels_horizontally",
+        "kind": 2,
+        "importPath": "dirty_version",
+        "description": "dirty_version",
+        "peekOfCode": "def stitch_panels_horizontally(panels):\n    max_height = max(panel.shape[0] for panel in panels)\n    panels_resized = [cv2.resize(panel, (panel.shape[1], max_height), interpolation=cv2.INTER_LINEAR) for panel in panels]\n    return np.concatenate(panels_resized, axis=1)\ndef stitch_vertical(rows):\n    max_width = max(row.shape[1] for row in rows)\n    rows_resized = []\n    for row in rows:\n        if row.shape[1] < max_width:\n            padding = np.zeros((row.shape[0], max_width - row.shape[1], 3), dtype=np.uint8)",
+        "detail": "dirty_version",
+        "documentation": {}
+    },
+    {
+        "label": "stitch_vertical",
+        "kind": 2,
+        "importPath": "dirty_version",
+        "description": "dirty_version",
+        "peekOfCode": "def stitch_vertical(rows):\n    max_width = max(row.shape[1] for row in rows)\n    rows_resized = []\n    for row in rows:\n        if row.shape[1] < max_width:\n            padding = np.zeros((row.shape[0], max_width - row.shape[1], 3), dtype=np.uint8)\n            row_resized = np.concatenate((row, padding), axis=1)\n        else:\n            row_resized = row\n        rows_resized.append(row_resized)",
+        "detail": "dirty_version",
+        "documentation": {}
+    },
+    {
+        "label": "split_into_panels",
+        "kind": 2,
+        "importPath": "dirty_version",
+        "description": "dirty_version",
+        "peekOfCode": "def split_into_panels(image, number_of_panels=6):\n    width = image.shape[1]\n    panel_width = width // number_of_panels\n    panels = [image[:, i*panel_width:(i+1)*panel_width] for i in range(number_of_panels)]\n    panels[-1] = image[:, (number_of_panels-1)*panel_width:]\n    return panels\ndef remove_bottom_strip(panel, strip_height=20):\n    return panel[:-strip_height, :]\ndef enhance_image(panel, clip_limit=2.0, tile_grid_size=(8, 8)):\n    panel_yuv = cv2.cvtColor(panel, cv2.COLOR_BGR2YUV)",
+        "detail": "dirty_version",
+        "documentation": {}
+    },
+    {
+        "label": "remove_bottom_strip",
+        "kind": 2,
+        "importPath": "dirty_version",
+        "description": "dirty_version",
+        "peekOfCode": "def remove_bottom_strip(panel, strip_height=20):\n    return panel[:-strip_height, :]\ndef enhance_image(panel, clip_limit=2.0, tile_grid_size=(8, 8)):\n    panel_yuv = cv2.cvtColor(panel, cv2.COLOR_BGR2YUV)\n    clahe = cv2.createCLAHE(clipLimit=clip_limit, tileGridSize=tile_grid_size)\n    panel_yuv[:, :, 0] = clahe.apply(panel_yuv[:, :, 0])\n    enhanced_panel = cv2.cvtColor(panel_yuv, cv2.COLOR_YUV2BGR)\n    return enhanced_panel\ndef preprocess_and_stitch_panels(image, number_of_panels=6, strip_height=35):\n    panels = split_into_panels(image, number_of_panels)",
+        "detail": "dirty_version",
+        "documentation": {}
+    },
+    {
+        "label": "enhance_image",
+        "kind": 2,
+        "importPath": "dirty_version",
+        "description": "dirty_version",
+        "peekOfCode": "def enhance_image(panel, clip_limit=2.0, tile_grid_size=(8, 8)):\n    panel_yuv = cv2.cvtColor(panel, cv2.COLOR_BGR2YUV)\n    clahe = cv2.createCLAHE(clipLimit=clip_limit, tileGridSize=tile_grid_size)\n    panel_yuv[:, :, 0] = clahe.apply(panel_yuv[:, :, 0])\n    enhanced_panel = cv2.cvtColor(panel_yuv, cv2.COLOR_YUV2BGR)\n    return enhanced_panel\ndef preprocess_and_stitch_panels(image, number_of_panels=6, strip_height=35):\n    panels = split_into_panels(image, number_of_panels)\n    processed_panels = []\n    for panel in panels:",
+        "detail": "dirty_version",
+        "documentation": {}
+    },
+    {
+        "label": "preprocess_and_stitch_panels",
+        "kind": 2,
+        "importPath": "dirty_version",
+        "description": "dirty_version",
+        "peekOfCode": "def preprocess_and_stitch_panels(image, number_of_panels=6, strip_height=35):\n    panels = split_into_panels(image, number_of_panels)\n    processed_panels = []\n    for panel in panels:\n        panel = enhance_image(panel)\n        processed_panels.append(panel)\n        temp_panel = panel.copy()\n        cv2.imshow('panel', panel)\n        cv2.waitKey(10)\n    return stitch_panels_horizontally(processed_panels)",
+        "detail": "dirty_version",
+        "documentation": {}
+    },
+    {
+        "label": "check_for_duplicate_panel",
+        "kind": 2,
+        "importPath": "dirty_version",
+        "description": "dirty_version",
+        "peekOfCode": "def check_for_duplicate_panel(image):\n    for panel in panels:\n        panel = cv2.imread(panel)\n        if np.array_equal(image, panel):\n            return True\n    return False\nfiles = glob.glob('images/buoys/*/*')\nrows_to_stitch = []\nlatest_image_files = []\nfor file in tqdm(files):",
+        "detail": "dirty_version",
+        "documentation": {}
+    },
+    {
+        "label": "check_for_duplicate_panel",
+        "kind": 2,
+        "importPath": "dirty_version",
+        "description": "dirty_version",
+        "peekOfCode": "def check_for_duplicate_panel(image):\n    for panel in panels:\n        panel = cv2.imread(panel)\n        if np.array_equal(image, panel):\n            print('found duplicate panel')\n            return True\n    return False\nfor row in rows_to_stitch:\n    if check_for_duplicate_panel(row):\n        rows_to_stitch.remove(row)",
+        "detail": "dirty_version",
+        "documentation": {}
+    },
+    {
+        "label": "panel_ids",
+        "kind": 5,
+        "importPath": "dirty_version",
+        "description": "dirty_version",
+        "peekOfCode": "panel_ids = glob.glob('images/*/*')\npanels = glob.glob('panels/*')\ndef scrape_noaa_buoycams(image_directory):\n    buoycam_url = \"https://www.ndbc.noaa.gov/buoycam.php?station={buoycam_id}\"\n    buoycam_ids = [\"45007\", \"45012\", \"46002\", \"46011\", \"46012\", \"46015\", \"46025\", \"46026\", \"46027\", \"46028\", \"46042\", \"46047\", \"46053\", \"46054\", \"46059\", \"46066\", \"46069\", \"46071\", \"46072\", \"46078\", \"46085\", \"46086\", \"46087\", \"46088\", \"46089\", \"51000\", \"51001\", \"51002\", \"51003\", \"51004\", \"51101\", \"46084\"]\n    os.makedirs(image_directory, exist_ok=True)\n    for buoycam_id in buoycam_ids:\n        url = buoycam_url.format(buoycam_id=buoycam_id)\n        response = requests.get(url)\n        if response.status_code == 200:",
+        "detail": "dirty_version",
+        "documentation": {}
+    },
+    {
+        "label": "panels",
+        "kind": 5,
+        "importPath": "dirty_version",
+        "description": "dirty_version",
+        "peekOfCode": "panels = glob.glob('panels/*')\ndef scrape_noaa_buoycams(image_directory):\n    buoycam_url = \"https://www.ndbc.noaa.gov/buoycam.php?station={buoycam_id}\"\n    buoycam_ids = [\"45007\", \"45012\", \"46002\", \"46011\", \"46012\", \"46015\", \"46025\", \"46026\", \"46027\", \"46028\", \"46042\", \"46047\", \"46053\", \"46054\", \"46059\", \"46066\", \"46069\", \"46071\", \"46072\", \"46078\", \"46085\", \"46086\", \"46087\", \"46088\", \"46089\", \"51000\", \"51001\", \"51002\", \"51003\", \"51004\", \"51101\", \"46084\"]\n    os.makedirs(image_directory, exist_ok=True)\n    for buoycam_id in buoycam_ids:\n        url = buoycam_url.format(buoycam_id=buoycam_id)\n        response = requests.get(url)\n        if response.status_code == 200:\n            timedateofimage = datetime.datetime.utcnow().strftime(\"%Y%m%d%H%M%S\")",
+        "detail": "dirty_version",
+        "documentation": {}
+    },
+    {
+        "label": "image_directory",
+        "kind": 5,
+        "importPath": "dirty_version",
+        "description": "dirty_version",
+        "peekOfCode": "image_directory = \"images/buoys\"\nscrape_noaa_buoycams(image_directory)\ndef is_mostly_black(image, threshold=10):\n    return np.mean(image) < threshold\ndef stitch_panels_horizontally(panels):\n    max_height = max(panel.shape[0] for panel in panels)\n    panels_resized = [cv2.resize(panel, (panel.shape[1], max_height), interpolation=cv2.INTER_LINEAR) for panel in panels]\n    return np.concatenate(panels_resized, axis=1)\ndef stitch_vertical(rows):\n    max_width = max(row.shape[1] for row in rows)",
+        "detail": "dirty_version",
+        "documentation": {}
+    },
+    {
+        "label": "files",
+        "kind": 5,
+        "importPath": "dirty_version",
+        "description": "dirty_version",
+        "peekOfCode": "files = glob.glob('images/buoys/*/*')\nrows_to_stitch = []\nlatest_image_files = []\nfor file in tqdm(files):\n    image = cv2.imread(file)\n    orange_value = np.mean(image[:,:,2])\n    if not (10 <= orange_value <= 150) or is_mostly_black(image):\n        continue\n    elif latest_image_files and np.array_equal(image, cv2.imread(latest_image_files[-1])):\n        continue",
+        "detail": "dirty_version",
+        "documentation": {}
+    },
+    {
+        "label": "rows_to_stitch",
+        "kind": 5,
+        "importPath": "dirty_version",
+        "description": "dirty_version",
+        "peekOfCode": "rows_to_stitch = []\nlatest_image_files = []\nfor file in tqdm(files):\n    image = cv2.imread(file)\n    orange_value = np.mean(image[:,:,2])\n    if not (10 <= orange_value <= 150) or is_mostly_black(image):\n        continue\n    elif latest_image_files and np.array_equal(image, cv2.imread(latest_image_files[-1])):\n        continue\n    row = preprocess_and_stitch_panels(image)",
+        "detail": "dirty_version",
+        "documentation": {}
+    },
+    {
+        "label": "latest_image_files",
+        "kind": 5,
+        "importPath": "dirty_version",
+        "description": "dirty_version",
+        "peekOfCode": "latest_image_files = []\nfor file in tqdm(files):\n    image = cv2.imread(file)\n    orange_value = np.mean(image[:,:,2])\n    if not (10 <= orange_value <= 150) or is_mostly_black(image):\n        continue\n    elif latest_image_files and np.array_equal(image, cv2.imread(latest_image_files[-1])):\n        continue\n    row = preprocess_and_stitch_panels(image)\n    rows_to_stitch.append(row)",
+        "detail": "dirty_version",
+        "documentation": {}
+    },
+    {
+        "label": "collage",
+        "kind": 5,
+        "importPath": "dirty_version",
+        "description": "dirty_version",
+        "peekOfCode": "collage = stitch_vertical(rows_to_stitch)\ndef check_for_duplicate_panel(image):\n    for panel in panels:\n        panel = cv2.imread(panel)\n        if np.array_equal(image, panel):\n            print('found duplicate panel')\n            return True\n    return False\nfor row in rows_to_stitch:\n    if check_for_duplicate_panel(row):",
+        "detail": "dirty_version",
+        "documentation": {}
+    },
+    {
+        "label": "timestamp",
+        "kind": 5,
+        "importPath": "dirty_version",
+        "description": "dirty_version",
+        "peekOfCode": "timestamp = str(int(time.time()))\ncollage_directory = 'images/save_images'\nos.makedirs(collage_directory, exist_ok=True)\nfilename = os.path.join(collage_directory, f'collage_{timestamp}.jpg')\ncv2.imwrite(filename, collage)\nprint(f\"Collage saved to {filename}\")\ncv2.imshow('Vertical Collage', collage)\ncv2.waitKey(0)\ncv2.destroyAllWindows()\nfor row in rows_to_stitch:",
+        "detail": "dirty_version",
+        "documentation": {}
+    },
+    {
+        "label": "collage_directory",
+        "kind": 5,
+        "importPath": "dirty_version",
+        "description": "dirty_version",
+        "peekOfCode": "collage_directory = 'images/save_images'\nos.makedirs(collage_directory, exist_ok=True)\nfilename = os.path.join(collage_directory, f'collage_{timestamp}.jpg')\ncv2.imwrite(filename, collage)\nprint(f\"Collage saved to {filename}\")\ncv2.imshow('Vertical Collage', collage)\ncv2.waitKey(0)\ncv2.destroyAllWindows()\nfor row in rows_to_stitch:\n    if check_for_duplicate_panel(row):",
+        "detail": "dirty_version",
+        "documentation": {}
+    },
+    {
+        "label": "filename",
+        "kind": 5,
+        "importPath": "dirty_version",
+        "description": "dirty_version",
+        "peekOfCode": "filename = os.path.join(collage_directory, f'collage_{timestamp}.jpg')\ncv2.imwrite(filename, collage)\nprint(f\"Collage saved to {filename}\")\ncv2.imshow('Vertical Collage', collage)\ncv2.waitKey(0)\ncv2.destroyAllWindows()\nfor row in rows_to_stitch:\n    if check_for_duplicate_panel(row):\n        rows_to_stitch.remove(row)\n        print('removed duplicate row')",
+        "detail": "dirty_version",
+        "documentation": {}
+    },
+    {
+        "label": "timestamp",
+        "kind": 5,
+        "importPath": "dirty_version",
+        "description": "dirty_version",
+        "peekOfCode": "timestamp = str(int(time.time()))\ncollage_directory = 'images/save_images'\nos.makedirs(collage_directory, exist_ok=True)\nfilename = os.path.join(collage_directory, f'collage_{timestamp}.jpg')\ncv2.imwrite(filename, collage)\nprint(f\"Collage saved to {filename}\")\ncv2.imshow('Vertical Collage', collage)\ncv2.waitKey(0)\ncv2.destroyAllWindows()",
+        "detail": "dirty_version",
+        "documentation": {}
+    },
+    {
+        "label": "collage_directory",
+        "kind": 5,
+        "importPath": "dirty_version",
+        "description": "dirty_version",
+        "peekOfCode": "collage_directory = 'images/save_images'\nos.makedirs(collage_directory, exist_ok=True)\nfilename = os.path.join(collage_directory, f'collage_{timestamp}.jpg')\ncv2.imwrite(filename, collage)\nprint(f\"Collage saved to {filename}\")\ncv2.imshow('Vertical Collage', collage)\ncv2.waitKey(0)\ncv2.destroyAllWindows()",
+        "detail": "dirty_version",
+        "documentation": {}
+    },
+    {
+        "label": "filename",
+        "kind": 5,
+        "importPath": "dirty_version",
+        "description": "dirty_version",
+        "peekOfCode": "filename = os.path.join(collage_directory, f'collage_{timestamp}.jpg')\ncv2.imwrite(filename, collage)\nprint(f\"Collage saved to {filename}\")\ncv2.imshow('Vertical Collage', collage)\ncv2.waitKey(0)\ncv2.destroyAllWindows()",
+        "detail": "dirty_version",
         "documentation": {}
     },
     {
