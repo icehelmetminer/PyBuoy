@@ -351,6 +351,14 @@
         "documentation": {}
     },
     {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
         "label": "sys,",
         "kind": 6,
         "isExtraImport": true,
@@ -392,6 +400,14 @@
         "isExtraImport": true,
         "importPath": "datetime",
         "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
         "detail": "datetime",
         "documentation": {}
     },
@@ -2423,7 +2439,7 @@
         "kind": 6,
         "importPath": "clean_version",
         "description": "clean_version",
-        "peekOfCode": "class BuoyCamScraper:\n    def __init__(self, image_directory, buoycam_ids):\n        self.image_directory = image_directory\n        self.buoycam_ids = buoycam_ids\n        os.makedirs(self.image_directory, exist_ok=True)\n    def scrape(self):\n        for buoycam_id in self.buoycam_ids:\n            self._scrape_single_buoycam(buoycam_id)\n    def _scrape_single_buoycam(self, buoycam_id):\n        url = f\"https://www.ndbc.noaa.gov/buoycam.php?station={buoycam_id}\"",
+        "peekOfCode": "class BuoyCamScraper:\n    def __init__(self, image_directory, buoycam_ids):\n        \"\"\"\n        The __init__ function is called when the class is instantiated.\n        It sets up the instance of the class with all of its attributes and methods.\n        :param self: Represent the instance of the class\n        :param image_directory: Set the directory where images will be saved\n        :param buoycam_ids: Create a list of buoycam_ids\n        :return: The image_directory and buoycam_ids\n        :doc-author: Trelent",
         "detail": "clean_version",
         "documentation": {}
     },
@@ -2432,7 +2448,7 @@
         "kind": 6,
         "importPath": "clean_version",
         "description": "clean_version",
-        "peekOfCode": "class ImageProcessor:\n    def __init__(self, base_directory):\n        self.base_directory = base_directory\n        self.panel_directory = os.path.join(base_directory, 'panels')\n        os.makedirs(self.panel_directory, exist_ok=True)\n        self.latest_images = {}  # Dictionary to hold the latest image per buoy\n    def process_images(self):\n        image_files = glob.glob(f'{self.base_directory}/*/*.jpg')\n        for file in tqdm(image_files, desc=\"Processing images\"):\n            buoy_id = os.path.basename(os.path.dirname(file))",
+        "peekOfCode": "class ImageProcessor:\n    def __init__(self, base_directory):\n        \"\"\"\n        The __init__ function is called when the class is instantiated.\n        It sets up the instance variables that are used by other methods in the class.\n        :param self: Represent the instance of the class\n        :param base_directory: Specify the directory where all of the images will be saved\n        :return: The object itself\n        :doc-author: Trelent\n        \"\"\"",
         "detail": "clean_version",
         "documentation": {}
     },
@@ -3676,6 +3692,24 @@
         "description": "one",
         "peekOfCode": "plt.rcParams['figure.figsize'] = [15, 10]\nfig, axes = plt.subplots(1, 3)\nfig.tight_layout()\nplt.subplot(131)\nplot_image(tf.squeeze(hr_image), title=\"Original\")\nplt.subplot(132)\nfig.tight_layout()\nplot_image(tf.squeeze(lr_image), \"x4 Bicubic\")\nplt.subplot(133)\nfig.tight_layout()",
         "detail": "one",
+        "documentation": {}
+    },
+    {
+        "label": "BuoyCamScraper",
+        "kind": 6,
+        "importPath": "pybuoy_final",
+        "description": "pybuoy_final",
+        "peekOfCode": "class BuoyCamScraper:\n    def __init__(self, image_directory, buoycam_ids):\n        \"\"\"\n        The __init__ function is called when the class is instantiated.\n        It sets up the instance of the class with all of its attributes and methods.\n        :param self: Represent the instance of the class\n        :param image_directory: Set the directory where images will be saved\n        :param buoycam_ids: Create a list of buoycam_ids\n        :return: The image_directory and buoycam_ids\n        :doc-author: Trelent",
+        "detail": "pybuoy_final",
+        "documentation": {}
+    },
+    {
+        "label": "ImageProcessor",
+        "kind": 6,
+        "importPath": "pybuoy_final",
+        "description": "pybuoy_final",
+        "peekOfCode": "class ImageProcessor:\n    def __init__(self, base_directory):\n        \"\"\"\n        The __init__ function is called when the class is instantiated.\n        It sets up the instance variables that are used by other methods in the class.\n        :param self: Represent the instance of the class\n        :param base_directory: Specify the directory where all of the images will be saved\n        :return: The object itself\n        :doc-author: Trelent\n        \"\"\"",
+        "detail": "pybuoy_final",
         "documentation": {}
     },
     {
