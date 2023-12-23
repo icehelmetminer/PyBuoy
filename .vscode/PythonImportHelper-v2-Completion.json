@@ -203,6 +203,14 @@
         "documentation": {}
     },
     {
+        "label": "Image",
+        "importPath": "PIL",
+        "description": "PIL",
+        "isExtraImport": true,
+        "detail": "PIL",
+        "documentation": {}
+    },
+    {
         "label": "io",
         "kind": 6,
         "isExtraImport": true,
@@ -415,61 +423,499 @@
         "documentation": {}
     },
     {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "tqdm",
+        "importPath": "tqdm",
+        "description": "tqdm",
+        "isExtraImport": true,
+        "detail": "tqdm",
+        "documentation": {}
+    },
+    {
+        "label": "shutil",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "shutil",
+        "description": "shutil",
+        "detail": "shutil",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "datetime",
+        "description": "datetime",
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "timedelta",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "datetime",
+        "importPath": "datetime",
+        "description": "datetime",
+        "isExtraImport": true,
+        "detail": "datetime",
+        "documentation": {}
+    },
+    {
+        "label": "threading",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "threading",
+        "description": "threading",
+        "detail": "threading",
+        "documentation": {}
+    },
+    {
+        "label": "schedule",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "schedule",
+        "description": "schedule",
+        "detail": "schedule",
+        "documentation": {}
+    },
+    {
+        "label": "ImageProcessor",
+        "importPath": "image_processor",
+        "description": "image_processor",
+        "isExtraImport": true,
+        "detail": "image_processor",
+        "documentation": {}
+    },
+    {
+        "label": "ImageProcessor",
+        "importPath": "image_processor",
+        "description": "image_processor",
+        "isExtraImport": true,
+        "detail": "image_processor",
+        "documentation": {}
+    },
+    {
+        "label": "ImageProcessor",
+        "importPath": "image_processor",
+        "description": "image_processor",
+        "isExtraImport": true,
+        "detail": "image_processor",
+        "documentation": {}
+    },
+    {
+        "label": "process_images",
+        "importPath": "image_processor",
+        "description": "image_processor",
+        "isExtraImport": true,
+        "detail": "image_processor",
+        "documentation": {}
+    },
+    {
+        "label": "process_images",
+        "importPath": "image_processor",
+        "description": "image_processor",
+        "isExtraImport": true,
+        "detail": "image_processor",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "importPath": "image_processor",
+        "description": "image_processor",
+        "isExtraImport": true,
+        "detail": "image_processor",
+        "documentation": {}
+    },
+    {
+        "label": "process_images",
+        "importPath": "image_processor",
+        "description": "image_processor",
+        "isExtraImport": true,
+        "detail": "image_processor",
+        "documentation": {}
+    },
+    {
+        "label": "BuoyCamScraper",
+        "importPath": "scraper",
+        "description": "scraper",
+        "isExtraImport": true,
+        "detail": "scraper",
+        "documentation": {}
+    },
+    {
+        "label": "BuoyCamScraper",
+        "importPath": "scraper",
+        "description": "scraper",
+        "isExtraImport": true,
+        "detail": "scraper",
+        "documentation": {}
+    },
+    {
+        "label": "scrape_single_buoycam",
+        "importPath": "scraper",
+        "description": "scraper",
+        "isExtraImport": true,
+        "detail": "scraper",
+        "documentation": {}
+    },
+    {
+        "label": "BuoyCamScraper",
+        "importPath": "scraper",
+        "description": "scraper",
+        "isExtraImport": true,
+        "detail": "scraper",
+        "documentation": {}
+    },
+    {
+        "label": "scrape_single_buoycam",
+        "importPath": "scraper",
+        "description": "scraper",
+        "isExtraImport": true,
+        "detail": "scraper",
+        "documentation": {}
+    },
+    {
+        "label": "scrape_single_buoycam",
+        "importPath": "scraper",
+        "description": "scraper",
+        "isExtraImport": true,
+        "detail": "scraper",
+        "documentation": {}
+    },
+    {
+        "label": "scrape_single_buoycam",
+        "importPath": "scraper",
+        "description": "scraper",
+        "isExtraImport": true,
+        "detail": "scraper",
+        "documentation": {}
+    },
+    {
+        "label": "logging",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "logging",
+        "description": "logging",
+        "detail": "logging",
+        "documentation": {}
+    },
+    {
+        "label": "scrape_images",
+        "importPath": "pybuoy_final",
+        "description": "pybuoy_final",
+        "isExtraImport": true,
+        "detail": "pybuoy_final",
+        "documentation": {}
+    },
+    {
+        "label": "process_images",
+        "importPath": "pybuoy_final",
+        "description": "pybuoy_final",
+        "isExtraImport": true,
+        "detail": "pybuoy_final",
+        "documentation": {}
+    },
+    {
+        "label": "icecream",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "icecream",
+        "description": "icecream",
+        "detail": "icecream",
+        "documentation": {}
+    },
+    {
+        "label": "ic",
+        "importPath": "icecream",
+        "description": "icecream",
+        "isExtraImport": true,
+        "detail": "icecream",
+        "documentation": {}
+    },
+    {
+        "label": "ic",
+        "importPath": "icecream",
+        "description": "icecream",
+        "isExtraImport": true,
+        "detail": "icecream",
+        "documentation": {}
+    },
+    {
+        "label": "ic",
+        "importPath": "icecream",
+        "description": "icecream",
+        "isExtraImport": true,
+        "detail": "icecream",
+        "documentation": {}
+    },
+    {
+        "label": "config",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "config",
+        "description": "config",
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "BUOYCAM_IDS",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "INTERVAL",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "BUOYCAM_IDS",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "INTERVAL",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "IMAGE_DIRECTORY",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "BUOYCAM_IDS",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "INTERVAL",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "IMAGE_DIRECTORY",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "IMAGE_DIRECTORY",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "BUOYCAM_IDS",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "COLLAGE_DIRECTORY",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "BUOYCAM_IDS",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "INTERVAL",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "INTERVAL",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "BUOYCAM_IDS",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
+        "label": "BUOYCAM_IDS",
+        "importPath": "config",
+        "description": "config",
+        "isExtraImport": true,
+        "detail": "config",
+        "documentation": {}
+    },
+    {
         "label": "sys,",
         "kind": 6,
         "isExtraImport": true,
         "importPath": "sys.",
         "description": "sys.",
         "detail": "sys.",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "datetime",
-        "description": "datetime",
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
-        "documentation": {}
-    },
-    {
-        "label": "datetime",
-        "importPath": "datetime",
-        "description": "datetime",
-        "isExtraImport": true,
-        "detail": "datetime",
         "documentation": {}
     },
     {
@@ -540,15 +986,6 @@
         "importPath": "pandas",
         "description": "pandas",
         "detail": "pandas",
-        "documentation": {}
-    },
-    {
-        "label": "shutil",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "shutil",
-        "description": "shutil",
-        "detail": "shutil",
         "documentation": {}
     },
     {
@@ -880,15 +1317,6 @@
         "documentation": {}
     },
     {
-        "label": "logging",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "logging",
-        "description": "logging",
-        "detail": "logging",
-        "documentation": {}
-    },
-    {
         "label": "subprocess",
         "kind": 6,
         "isExtraImport": true,
@@ -931,6 +1359,136 @@
         "documentation": {}
     },
     {
+        "label": "scheduled_tasks",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "scheduled_tasks",
+        "description": "scheduled_tasks",
+        "detail": "scheduled_tasks",
+        "documentation": {}
+    },
+    {
+        "label": "Scheduler",
+        "importPath": "scheduler",
+        "description": "scheduler",
+        "isExtraImport": true,
+        "detail": "scheduler",
+        "documentation": {}
+    },
+    {
+        "label": "remove_whiteimages",
+        "importPath": "utils",
+        "description": "utils",
+        "isExtraImport": true,
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "remove_similar_images",
+        "importPath": "utils",
+        "description": "utils",
+        "isExtraImport": true,
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "remove_whiteimages",
+        "importPath": "utils",
+        "description": "utils",
+        "isExtraImport": true,
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "remove_similar_images",
+        "importPath": "utils",
+        "description": "utils",
+        "isExtraImport": true,
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "remove_whiteimages",
+        "importPath": "utils",
+        "description": "utils",
+        "isExtraImport": true,
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "remove_similar_images",
+        "importPath": "utils",
+        "description": "utils",
+        "isExtraImport": true,
+        "detail": "utils",
+        "documentation": {}
+    },
+    {
+        "label": "setup_logging",
+        "importPath": "logger",
+        "description": "logger",
+        "isExtraImport": true,
+        "detail": "logger",
+        "documentation": {}
+    },
+    {
+        "label": "setup_logger",
+        "importPath": "logger",
+        "description": "logger",
+        "isExtraImport": true,
+        "detail": "logger",
+        "documentation": {}
+    },
+    {
+        "label": "setup_logging",
+        "importPath": "logger",
+        "description": "logger",
+        "isExtraImport": true,
+        "detail": "logger",
+        "documentation": {}
+    },
+    {
+        "label": "setup_logger",
+        "importPath": "logger",
+        "description": "logger",
+        "isExtraImport": true,
+        "detail": "logger",
+        "documentation": {}
+    },
+    {
+        "label": "setup_logging",
+        "importPath": "logger",
+        "description": "logger",
+        "isExtraImport": true,
+        "detail": "logger",
+        "documentation": {}
+    },
+    {
+        "label": "setup_logger",
+        "importPath": "logger",
+        "description": "logger",
+        "isExtraImport": true,
+        "detail": "logger",
+        "documentation": {}
+    },
+    {
+        "label": "setup_logger",
+        "importPath": "logger",
+        "description": "logger",
+        "isExtraImport": true,
+        "detail": "logger",
+        "documentation": {}
+    },
+    {
+        "label": "concurrent.futures",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "concurrent.futures",
+        "description": "concurrent.futures",
+        "detail": "concurrent.futures",
+        "documentation": {}
+    },
+    {
         "label": "sample",
         "kind": 6,
         "isExtraImport": true,
@@ -949,160 +1507,6 @@
         "documentation": {}
     },
     {
-        "label": "csv",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "csv",
-        "description": "csv",
-        "detail": "csv",
-        "documentation": {}
-    },
-    {
-        "label": "remove_whiteimages",
-        "importPath": "white_image_removal",
-        "description": "white_image_removal",
-        "isExtraImport": true,
-        "detail": "white_image_removal",
-        "documentation": {}
-    },
-    {
-        "label": "remove_whiteimages",
-        "importPath": "white_image_removal",
-        "description": "white_image_removal",
-        "isExtraImport": true,
-        "detail": "white_image_removal",
-        "documentation": {}
-    },
-    {
-        "label": "IMAGE_DIRECTORY",
-        "importPath": "config",
-        "description": "config",
-        "isExtraImport": true,
-        "detail": "config",
-        "documentation": {}
-    },
-    {
-        "label": "BUOYCAM_IDS",
-        "importPath": "config",
-        "description": "config",
-        "isExtraImport": true,
-        "detail": "config",
-        "documentation": {}
-    },
-    {
-        "label": "COLLAGE_DIRECTORY",
-        "importPath": "config",
-        "description": "config",
-        "isExtraImport": true,
-        "detail": "config",
-        "documentation": {}
-    },
-    {
-        "label": "BUOYCAM_IDS",
-        "importPath": "config",
-        "description": "config",
-        "isExtraImport": true,
-        "detail": "config",
-        "documentation": {}
-    },
-    {
-        "label": "INTERVAL",
-        "importPath": "config",
-        "description": "config",
-        "isExtraImport": true,
-        "detail": "config",
-        "documentation": {}
-    },
-    {
-        "label": "INTERVAL",
-        "importPath": "config",
-        "description": "config",
-        "isExtraImport": true,
-        "detail": "config",
-        "documentation": {}
-    },
-    {
-        "label": "BUOYCAM_IDS",
-        "importPath": "config",
-        "description": "config",
-        "isExtraImport": true,
-        "detail": "config",
-        "documentation": {}
-    },
-    {
-        "label": "BUOYCAM_IDS",
-        "importPath": "config",
-        "description": "config",
-        "isExtraImport": true,
-        "detail": "config",
-        "documentation": {}
-    },
-    {
-        "label": "setup_logger",
-        "importPath": "logger",
-        "description": "logger",
-        "isExtraImport": true,
-        "detail": "logger",
-        "documentation": {}
-    },
-    {
-        "label": "setup_logger",
-        "importPath": "logger",
-        "description": "logger",
-        "isExtraImport": true,
-        "detail": "logger",
-        "documentation": {}
-    },
-    {
-        "label": "scrape_single_buoycam",
-        "importPath": "scraper",
-        "description": "scraper",
-        "isExtraImport": true,
-        "detail": "scraper",
-        "documentation": {}
-    },
-    {
-        "label": "scrape_single_buoycam",
-        "importPath": "scraper",
-        "description": "scraper",
-        "isExtraImport": true,
-        "detail": "scraper",
-        "documentation": {}
-    },
-    {
-        "label": "process_images",
-        "importPath": "image_processor",
-        "description": "image_processor",
-        "isExtraImport": true,
-        "detail": "image_processor",
-        "documentation": {}
-    },
-    {
-        "label": "logger",
-        "importPath": "image_processor",
-        "description": "image_processor",
-        "isExtraImport": true,
-        "detail": "image_processor",
-        "documentation": {}
-    },
-    {
-        "label": "process_images",
-        "importPath": "image_processor",
-        "description": "image_processor",
-        "isExtraImport": true,
-        "detail": "image_processor",
-        "documentation": {}
-    },
-    {
-        "label": "concurrent.futures",
-        "kind": 6,
-        "isExtraImport": true,
-        "importPath": "concurrent.futures",
-        "description": "concurrent.futures",
-        "detail": "concurrent.futures",
-        "documentation": {}
-    },
-    {
         "label": "logging.handlers",
         "kind": 6,
         "isExtraImport": true,
@@ -1112,20 +1516,35 @@
         "documentation": {}
     },
     {
-        "label": "icecream",
-        "kind": 6,
+        "label": "remove_whiteimages",
+        "importPath": "white_image_removal",
+        "description": "white_image_removal",
         "isExtraImport": true,
-        "importPath": "icecream",
-        "description": "icecream",
-        "detail": "icecream",
+        "detail": "white_image_removal",
         "documentation": {}
     },
     {
-        "label": "ic",
-        "importPath": "icecream",
-        "description": "icecream",
+        "label": "remove_whiteimages",
+        "importPath": "white_image_removal",
+        "description": "white_image_removal",
         "isExtraImport": true,
-        "detail": "icecream",
+        "detail": "white_image_removal",
+        "documentation": {}
+    },
+    {
+        "label": "remove_whiteimages",
+        "importPath": "white_image_removal",
+        "description": "white_image_removal",
+        "isExtraImport": true,
+        "detail": "white_image_removal",
+        "documentation": {}
+    },
+    {
+        "label": "remove_whiteimages",
+        "importPath": "white_image_removal",
+        "description": "white_image_removal",
+        "isExtraImport": true,
+        "detail": "white_image_removal",
         "documentation": {}
     },
     {
@@ -1134,6 +1553,47 @@
         "description": "duplicates",
         "isExtraImport": true,
         "detail": "duplicates",
+        "documentation": {}
+    },
+    {
+        "label": "remove_similar_images",
+        "importPath": "duplicates",
+        "description": "duplicates",
+        "isExtraImport": true,
+        "detail": "duplicates",
+        "documentation": {}
+    },
+    {
+        "label": "remove_similar_images",
+        "importPath": "duplicates",
+        "description": "duplicates",
+        "isExtraImport": true,
+        "detail": "duplicates",
+        "documentation": {}
+    },
+    {
+        "label": "csv",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "csv",
+        "description": "csv",
+        "detail": "csv",
+        "documentation": {}
+    },
+    {
+        "label": "process_image",
+        "importPath": "horizon",
+        "description": "horizon",
+        "isExtraImport": true,
+        "detail": "horizon",
+        "documentation": {}
+    },
+    {
+        "label": "BlockingScheduler",
+        "importPath": "apscheduler.schedulers.blocking",
+        "description": "apscheduler.schedulers.blocking",
+        "isExtraImport": true,
+        "detail": "apscheduler.schedulers.blocking",
         "documentation": {}
     },
     {
@@ -1485,6 +1945,123 @@
         "description": "data.dev3",
         "peekOfCode": "def stitch_vertical(rows):\n    # Ensure all rows are the same width before stitching\n    max_width = max(row.shape[1] for row in rows)\n    # Resize rows to the max width or pad with black pixels\n    rows_resized = []\n    for row in rows:\n        if row.shape[1] < max_width:\n            padding = np.zeros((row.shape[0], max_width - row.shape[1], 3), dtype=np.uint8)\n            row_resized = np.concatenate((row, padding), axis=1)\n        else:",
         "detail": "data.dev3",
+        "documentation": {}
+    },
+    {
+        "label": "clean_old_images",
+        "kind": 2,
+        "importPath": "dev.clean",
+        "description": "dev.clean",
+        "peekOfCode": "def clean_old_images(directory, days_old=7):\n    cutoff_time = datetime.now() - timedelta(days=days_old)\n    for root, dirs, files in os.walk(directory):\n        for file in files:\n            file_path = os.path.join(root, file)\n            file_time = datetime.fromtimestamp(os.path.getmtime(file_path))\n            if file_time < cutoff_time:\n                os.remove(file_path)\n                print(f\"Removed old file: {file_path}\")\ndef safe_execute(function):",
+        "detail": "dev.clean",
+        "documentation": {}
+    },
+    {
+        "label": "safe_execute",
+        "kind": 2,
+        "importPath": "dev.clean",
+        "description": "dev.clean",
+        "peekOfCode": "def safe_execute(function):\n    def wrapper(*args, **kwargs):\n        try:\n            return function(*args, **kwargs)\n        except Exception as e:\n            logger.error(f\"Error in {function.__name__}: {e}\")\n            return None\n    return wrapper\n# Usage Example\n@safe_execute",
+        "detail": "dev.clean",
+        "documentation": {}
+    },
+    {
+        "label": "scrape_buoycam",
+        "kind": 2,
+        "importPath": "dev.clean",
+        "description": "dev.clean",
+        "peekOfCode": "def scrape_buoycam(buoycam_id):\n    # scraping logic\n    pass\n# Example Usage\nclean_old_images('images/buoys', days_old=7)",
+        "detail": "dev.clean",
+        "documentation": {}
+    },
+    {
+        "label": "BUOYCAM_IDS",
+        "kind": 5,
+        "importPath": "dev.config",
+        "description": "dev.config",
+        "peekOfCode": "BUOYCAM_IDS = [\"42001\",\"46059\",\"41044\",\"46071\",\"42002\",\"46072\",\"46066\",\"41046\",\"46088\",\"44066\",\"46089\",\"41043\",\"42012\",\"42039\",\"46012\",\"46011\",\"42060\",\"41009\",\"46028\",\"44011\",\"41008\",\"46015\",\"42059\",\"44013\",\"44007\",\"46002\",\"51003\",\"46027\",\"46026\",\"51002\",\"51000\",\"42040\",\"44020\",\"46025\",\"41010\",\"41004\",\"51001\",\"44025\",\"41001\",\"51004\",\"44027\",\"41002\",\"42020\",\"46078\",\"46087\",\"51101\",\"46086\",\"45002\",\"46053\",\"46047\",\"46084\",\"46085\",\"45003\",\"45007\",\"46042\",\"45012\",\"42019\",\"46069\",\"46054\",\"41049\",\"45005\",\"45007\", \"45012\", \"46002\", \"46011\", \"46012\", \"46015\", \"46025\", \"46026\", \"46027\", \"46028\", \"46042\", \"46047\", \"46053\", \"46054\", \"46059\", \"46066\", \"46069\", \"46071\", \"46072\", \"46078\", \"46085\", \"46086\", \"46087\", \"46088\", \"46089\", \"51000\", \"51001\", \"51002\", \"51003\", \"51004\", \"51101\", \"46084\",\"45007\", \"45012\", \"46002\", \"46011\", \"46012\", \"46015\", \"46025\", \"46026\", \"46027\", \"46028\", \"46042\", \"46047\", \"46053\", \"46054\", \"46059\", \"46066\", \"46069\", \"46071\", \"46072\", \"46078\", \"46085\", \"46086\", \"46087\", \"46088\", \"46089\", \"51000\", \"51001\", \"51002\", \"51003\", \"51004\", \"51101\", \"46084\"]",
+        "detail": "dev.config",
+        "documentation": {}
+    },
+    {
+        "label": "safe_execute",
+        "kind": 2,
+        "importPath": "dev.main",
+        "description": "dev.main",
+        "peekOfCode": "def safe_execute(function):\n    def wrapper(*args, **kwargs):\n        try:\n            return function(*args, **kwargs)\n        except Exception as e:\n            logger.error(f\"Error in {function.__name__}: {e}\")\n            return None\n    return wrapper\n# Function to scrape buoy images\n@safe_execute",
+        "detail": "dev.main",
+        "documentation": {}
+    },
+    {
+        "label": "scrape_images",
+        "kind": 2,
+        "importPath": "dev.main",
+        "description": "dev.main",
+        "peekOfCode": "def scrape_images():\n    scraper = BuoyCamScraper(verbose=True)\n    scraper.scrape()\n# Function to process images\ndef process_images():\n    processor = ImageProcessor(IMAGE_DIRECTORY, verbose=True)\n    processor.process_images()\n# Scheduling tasks\nschedule.every(15).minutes.do(scrape_images)\nschedule.every(30).minutes.do(process_images)",
+        "detail": "dev.main",
+        "documentation": {}
+    },
+    {
+        "label": "process_images",
+        "kind": 2,
+        "importPath": "dev.main",
+        "description": "dev.main",
+        "peekOfCode": "def process_images():\n    processor = ImageProcessor(IMAGE_DIRECTORY, verbose=True)\n    processor.process_images()\n# Scheduling tasks\nschedule.every(15).minutes.do(scrape_images)\nschedule.every(30).minutes.do(process_images)\n# Running the scheduled tasks in a separate thread\ndef run_schedule():\n    while True:\n        schedule.run_pending()",
+        "detail": "dev.main",
+        "documentation": {}
+    },
+    {
+        "label": "run_schedule",
+        "kind": 2,
+        "importPath": "dev.main",
+        "description": "dev.main",
+        "peekOfCode": "def run_schedule():\n    while True:\n        schedule.run_pending()\n        time.sleep(1)\nif __name__ == \"__main__\":\n    # Starting the scheduling thread\n    threading.Thread(target=run_schedule, daemon=True).start()\n    # Main loop\n    try:\n        while True:",
+        "detail": "dev.main",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "dev.main",
+        "description": "dev.main",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nlogger.setLevel(logging.INFO)\nformatter = logging.Formatter('%(asctime)s:%(name)s:%(levelname)s:%(message)s')\nfile_handler = logging.FileHandler('logs/main.log')\nfile_handler.setFormatter(formatter)\nlogger.addHandler(file_handler)\nfrom pybuoy_final import scrape_images, process_images\n#^ Setting up constants\n# IMAGE_DIRECTORY = '/Volumes/THEVAULT/IMAGES'\n# BUOYCAM_IDS = ['42001', '46059']",
+        "detail": "dev.main",
+        "documentation": {}
+    },
+    {
+        "label": "formatter",
+        "kind": 5,
+        "importPath": "dev.main",
+        "description": "dev.main",
+        "peekOfCode": "formatter = logging.Formatter('%(asctime)s:%(name)s:%(levelname)s:%(message)s')\nfile_handler = logging.FileHandler('logs/main.log')\nfile_handler.setFormatter(formatter)\nlogger.addHandler(file_handler)\nfrom pybuoy_final import scrape_images, process_images\n#^ Setting up constants\n# IMAGE_DIRECTORY = '/Volumes/THEVAULT/IMAGES'\n# BUOYCAM_IDS = ['42001', '46059']\ndef safe_execute(function):\n    def wrapper(*args, **kwargs):",
+        "detail": "dev.main",
+        "documentation": {}
+    },
+    {
+        "label": "file_handler",
+        "kind": 5,
+        "importPath": "dev.main",
+        "description": "dev.main",
+        "peekOfCode": "file_handler = logging.FileHandler('logs/main.log')\nfile_handler.setFormatter(formatter)\nlogger.addHandler(file_handler)\nfrom pybuoy_final import scrape_images, process_images\n#^ Setting up constants\n# IMAGE_DIRECTORY = '/Volumes/THEVAULT/IMAGES'\n# BUOYCAM_IDS = ['42001', '46059']\ndef safe_execute(function):\n    def wrapper(*args, **kwargs):\n        try:",
+        "detail": "dev.main",
+        "documentation": {}
+    },
+    {
+        "label": "BuoyCamScraper",
+        "kind": 6,
+        "importPath": "dev.runner",
+        "description": "dev.runner",
+        "peekOfCode": "class BuoyCamScraper:\n    def __init__(self, verbose=False):\n        self.image_directory = '/Volumes/THEVAULT/IMAGES'\n        self.buoycam_ids = [\"42001\",\"46059\",\"41044\",\"46071\",\"42002\",\"46072\",\"46066\",\"41046\",\"46088\",\"44066\",\"46089\",\"41043\",\"42012\",\"42039\",\"46012\",\"46011\",\"42060\",\"41009\",\"46028\",\"44011\",\"41008\",\"46015\",\"42059\",\"44013\",\"44007\",\"46002\",\"51003\",\"46027\",\"46026\",\"51002\",\"51000\",\"42040\",\"44020\",\"46025\",\"41010\",\"41004\",\"51001\",\"44025\",\"41001\",\"51004\",\"44027\",\"41002\",\"42020\",\"46078\",\"46087\",\"51101\",\"46086\",\"45002\",\"46053\",\"46047\",\"46084\",\"46085\",\"45003\",\"45007\",\"46042\",\"45012\",\"42019\",\"46069\",\"46054\",\"41049\",\"45005\",\"45007\", \"45012\", \"46002\", \"46011\", \"46012\", \"46015\", \"46025\", \"46026\", \"46027\", \"46028\", \"46042\", \"46047\", \"46053\", \"46054\", \"46059\", \"46066\", \"46069\", \"46071\", \"46072\", \"46078\", \"46085\", \"46086\", \"46087\", \"46088\", \"46089\", \"51000\", \"51001\", \"51002\", \"51003\", \"51004\", \"51101\", \"46084\",\"45007\", \"45012\", \"46002\", \"46011\", \"46012\", \"46015\", \"46025\", \"46026\", \"46027\", \"46028\", \"46042\", \"46047\", \"46053\", \"46054\", \"46059\", \"46066\", \"46069\", \"46071\", \"46072\", \"46078\", \"46085\", \"46086\", \"46087\", \"46088\", \"46089\", \"51000\", \"51001\", \"51002\", \"51003\", \"51004\", \"51101\", \"46084\"]\n        self.verbose = True\n        os.makedirs(self.image_directory, exist_ok=True) # exist okay means it won't throw an error if the directory already exists, it will just continue\n    def _scrape_single_buoycam(self, buoycam_id):\n        try:\n            url = f\"https://www.ndbc.noaa.gov/buoycam.php?station={buoycam_id}\"\n            response = requests.get(url)",
+        "detail": "dev.runner",
+        "documentation": {}
+    },
+    {
+        "label": "IMAGE_DIRECTORY",
+        "kind": 5,
+        "importPath": "dev.runner",
+        "description": "dev.runner",
+        "peekOfCode": "IMAGE_DIRECTORY = '/Volumes/THEVAULT/IMAGES'\nclass BuoyCamScraper:\n    def __init__(self, verbose=False):\n        self.image_directory = '/Volumes/THEVAULT/IMAGES'\n        self.buoycam_ids = [\"42001\",\"46059\",\"41044\",\"46071\",\"42002\",\"46072\",\"46066\",\"41046\",\"46088\",\"44066\",\"46089\",\"41043\",\"42012\",\"42039\",\"46012\",\"46011\",\"42060\",\"41009\",\"46028\",\"44011\",\"41008\",\"46015\",\"42059\",\"44013\",\"44007\",\"46002\",\"51003\",\"46027\",\"46026\",\"51002\",\"51000\",\"42040\",\"44020\",\"46025\",\"41010\",\"41004\",\"51001\",\"44025\",\"41001\",\"51004\",\"44027\",\"41002\",\"42020\",\"46078\",\"46087\",\"51101\",\"46086\",\"45002\",\"46053\",\"46047\",\"46084\",\"46085\",\"45003\",\"45007\",\"46042\",\"45012\",\"42019\",\"46069\",\"46054\",\"41049\",\"45005\",\"45007\", \"45012\", \"46002\", \"46011\", \"46012\", \"46015\", \"46025\", \"46026\", \"46027\", \"46028\", \"46042\", \"46047\", \"46053\", \"46054\", \"46059\", \"46066\", \"46069\", \"46071\", \"46072\", \"46078\", \"46085\", \"46086\", \"46087\", \"46088\", \"46089\", \"51000\", \"51001\", \"51002\", \"51003\", \"51004\", \"51101\", \"46084\",\"45007\", \"45012\", \"46002\", \"46011\", \"46012\", \"46015\", \"46025\", \"46026\", \"46027\", \"46028\", \"46042\", \"46047\", \"46053\", \"46054\", \"46059\", \"46066\", \"46069\", \"46071\", \"46072\", \"46078\", \"46085\", \"46086\", \"46087\", \"46088\", \"46089\", \"51000\", \"51001\", \"51002\", \"51003\", \"51004\", \"51101\", \"46084\"]\n        self.verbose = True\n        os.makedirs(self.image_directory, exist_ok=True) # exist okay means it won't throw an error if the directory already exists, it will just continue\n    def _scrape_single_buoycam(self, buoycam_id):\n        try:\n            url = f\"https://www.ndbc.noaa.gov/buoycam.php?station={buoycam_id}\"",
+        "detail": "dev.runner",
         "documentation": {}
     },
     {
@@ -4080,6 +4657,105 @@
         "documentation": {}
     },
     {
+        "label": "BUOYCAM_IDS",
+        "kind": 5,
+        "importPath": "master_folder.config",
+        "description": "master_folder.config",
+        "peekOfCode": "BUOYCAM_IDS = [\"42001\",\"46059\",\"41044\",\"46071\",\"42002\",\"46072\",\"46066\",\"41046\",\"46088\",\"44066\",\"46089\",\"41043\",\"42012\",\"42039\",\"46012\",\"46011\",\"42060\",\"41009\",\"46028\",\"44011\",\"41008\",\"46015\",\"42059\",\"44013\",\"44007\",\"46002\",\"51003\",\"46027\",\"46026\",\"51002\",\"51000\",\"42040\",\"44020\",\"46025\",\"41010\",\"41004\",\"51001\",\"44025\",\"41001\",\"51004\",\"44027\",\"41002\",\"42020\",\"46078\",\"46087\",\"51101\",\"46086\",\"45002\",\"46053\",\"46047\",\"46084\",\"46085\",\"45003\",\"45007\",\"46042\",\"45012\",\"42019\",\"46069\",\"46054\",\"41049\",\"45005\",\"45007\", \"45012\", \"46002\", \"46011\", \"46012\", \"46015\", \"46025\", \"46026\", \"46027\", \"46028\", \"46042\", \"46047\", \"46053\", \"46054\", \"46059\", \"46066\", \"46069\", \"46071\", \"46072\", \"46078\", \"46085\", \"46086\", \"46087\", \"46088\", \"46089\", \"51000\", \"51001\", \"51002\", \"51003\", \"51004\", \"51101\", \"46084\",\"45007\", \"45012\", \"46002\", \"46011\", \"46012\", \"46015\", \"46025\", \"46026\", \"46027\", \"46028\", \"46042\", \"46047\", \"46053\", \"46054\", \"46059\", \"46066\", \"46069\", \"46071\", \"46072\", \"46078\", \"46085\", \"46086\", \"46087\", \"46088\", \"46089\", \"51000\", \"51001\", \"51002\", \"51003\", \"51004\", \"51101\", \"46084\"]\nIMAGE_DIRECTORY = '/Volumes/THEVAULT/IMAGES'\nINTERVAL = 15 # minutes",
+        "detail": "master_folder.config",
+        "documentation": {}
+    },
+    {
+        "label": "IMAGE_DIRECTORY",
+        "kind": 5,
+        "importPath": "master_folder.config",
+        "description": "master_folder.config",
+        "peekOfCode": "IMAGE_DIRECTORY = '/Volumes/THEVAULT/IMAGES'\nINTERVAL = 15 # minutes",
+        "detail": "master_folder.config",
+        "documentation": {}
+    },
+    {
+        "label": "INTERVAL",
+        "kind": 5,
+        "importPath": "master_folder.config",
+        "description": "master_folder.config",
+        "peekOfCode": "INTERVAL = 15 # minutes",
+        "detail": "master_folder.config",
+        "documentation": {}
+    },
+    {
+        "label": "ImageProcessor",
+        "kind": 6,
+        "importPath": "master_folder.image_processor",
+        "description": "master_folder.image_processor",
+        "peekOfCode": "class ImageProcessor:\n    def __init__(self, base_directory):\n        self.base_directory = base_directory\n    def process_images(self):\n        # Your existing image processing logic goes here",
+        "detail": "master_folder.image_processor",
+        "documentation": {}
+    },
+    {
+        "label": "setup_logging",
+        "kind": 2,
+        "importPath": "master_folder.logger",
+        "description": "master_folder.logger",
+        "peekOfCode": "def setup_logging():\n    logger = logging.getLogger('pybuoy')\n    logger.setLevel(logging.DEBUG)\n    if not os.path.exists('logs'):\n        os.makedirs('logs')\n    file_handler = logging.FileHandler('logs/pybuoy.log')\n    formatter = logging.Formatter('%(asctime)s:%(name)s:%(levelname)s:%(message)s')\n    file_handler.setFormatter(formatter)\n    logger.addHandler(file_handler)\n    return logger",
+        "detail": "master_folder.logger",
+        "documentation": {}
+    },
+    {
+        "label": "schedule_all_tasks",
+        "kind": 2,
+        "importPath": "master_folder.main",
+        "description": "master_folder.main",
+        "peekOfCode": "def schedule_all_tasks(scheduler):\n    # Set up logging\n    logger = setup_logger()\n    # Initialize classes\n    scraper = BuoyCamScraper(IMAGE_DIRECTORY, BUOYCAM_IDS)\n    def scrape_task():\n        logger.info(\"Starting scraping task.\")\n        scraper.scrape()\n        logger.info(\"Scraping task completed.\")\n    # Schedule tasks",
+        "detail": "master_folder.main",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "master_folder.main",
+        "description": "master_folder.main",
+        "peekOfCode": "def main():\n    while True:\n        current_hour = datetime.utcnow().hour\n        if 4 <= current_hour <= 24:\n            with concurrent.futures.ThreadPoolExecutor() as executor:\n                results = executor.map(scrape_single_buoycam, BUOYCAM_IDS)\n                for result, buoycam_id in zip(results, BUOYCAM_IDS):\n                    if result:\n                        executor.submit(process_images, result, buoycam_id)\n            for i in tqdm(range(0, INTERVAL * 60)):",
+        "detail": "master_folder.main",
+        "documentation": {}
+    },
+    {
+        "label": "run_schedule",
+        "kind": 2,
+        "importPath": "master_folder.run_schedule",
+        "description": "master_folder.run_schedule",
+        "peekOfCode": "def run_schedule():\n    while True:\n        schedule.run_pending()\n        time.sleep(1)",
+        "detail": "master_folder.run_schedule",
+        "documentation": {}
+    },
+    {
+        "label": "schedule_all_tasks",
+        "kind": 2,
+        "importPath": "master_folder.scheduled_tasks",
+        "description": "master_folder.scheduled_tasks",
+        "peekOfCode": "def schedule_all_tasks(scheduler):\n    # Set up logging\n    logger = setup_logging()\n    # Initialize classes\n    scraper = BuoyCamScraper(os.path.join('images', 'buoys'), buoycam_ids)\n    processor = ImageProcessor(os.path.join('images', 'buoys'))\n    def scrape_task():\n        logger.info(\"Starting scraping task.\")\n        scraper.scrape()\n        logger.info(\"Scraping task completed.\")",
+        "detail": "master_folder.scheduled_tasks",
+        "documentation": {}
+    },
+    {
+        "label": "Scheduler",
+        "kind": 6,
+        "importPath": "master_folder.scheduler",
+        "description": "master_folder.scheduler",
+        "peekOfCode": "class Scheduler:\n    def __init__(self):\n        self.tasks = []\n    def schedule_task(self, task, interval_minutes):\n        def task_wrapper():\n            while True:\n                task()\n                time.sleep(interval_minutes * 60)\n        t = threading.Thread(target=task_wrapper)\n        t.start()",
+        "detail": "master_folder.scheduler",
+        "documentation": {}
+    },
+    {
+        "label": "BuoyCamScraper",
+        "kind": 6,
+        "importPath": "master_folder.scraper",
+        "description": "master_folder.scraper",
+        "peekOfCode": "class BuoyCamScraper:\n    def __init__(self, image_directory, buoycam_ids):\n        self.image_directory = image_directory\n        self.buoycam_ids = buoycam_ids\n    def _scrape_single_buoycam(self, buoycam_id):\n        # Your existing scraping logic goes here\n    def scrape(self):\n        # scrape all buoycams\n        for buoycam_id in tqdm(self.BUOYCAM_IDS, desc=\"Scraping buoycams\"):\n            self._scrape_single_buoycam(buoycam_id)",
+        "detail": "master_folder.scraper",
+        "documentation": {}
+    },
+    {
         "label": "get_hmm",
         "kind": 2,
         "importPath": "sample.core",
@@ -4122,6 +4798,87 @@
         "description": "tests.test_basic",
         "peekOfCode": "class BasicTestSuite(unittest.TestCase):\n    \"\"\"Basic test cases.\"\"\"\n    def test_absolute_truth_and_meaning(self):\n        assert True\nif __name__ == '__main__':\n    unittest.main()",
         "detail": "tests.test_basic",
+        "documentation": {}
+    },
+    {
+        "label": "BuoyCamScraper",
+        "kind": 6,
+        "importPath": "BAREBONES_pyseas",
+        "description": "BAREBONES_pyseas",
+        "peekOfCode": "class BuoyCamScraper:\n    def __init__(self, image_directory, buoycam_ids):\n        self.image_directory = image_directory\n        self.buoycam_ids = buoycam_ids\n        os.makedirs(self.image_directory, exist_ok=True)\n    def scrape(self):\n        for buoycam_id in self.buoycam_ids:\n            self._scrape_single_buoycam(buoycam_id)\n    def _scrape_single_buoycam(self, buoycam_id):\n        try:",
+        "detail": "BAREBONES_pyseas",
+        "documentation": {}
+    },
+    {
+        "label": "ImageProcessor",
+        "kind": 6,
+        "importPath": "BAREBONES_pyseas",
+        "description": "BAREBONES_pyseas",
+        "peekOfCode": "class ImageProcessor:\n    def __init__(self, base_directory):\n        self.base_directory = base_directory\n        self.panel_directory = os.path.join(base_directory, 'panels')\n        os.makedirs(self.panel_directory, exist_ok=True)\n        self.latest_images = {}\n    def process_images(self):\n        image_files = glob.glob(f'{self.base_directory}/*/*.jpg')\n        for file in tqdm(image_files, desc=\"Processing images\"):\n            buoy_id = os.path.basename(os.path.dirname(file))",
+        "detail": "BAREBONES_pyseas",
+        "documentation": {}
+    },
+    {
+        "label": "logger",
+        "kind": 5,
+        "importPath": "BAREBONES_pyseas",
+        "description": "BAREBONES_pyseas",
+        "peekOfCode": "logger = logging.getLogger(__name__)\nlogger.setLevel(logging.DEBUG)\nformatter = logging.Formatter('%(asctime)s:%(name)s:%(levelname)s:%(message)s')\nfile_handler = logging.FileHandler('logs/pybuoy.log')\nfile_handler.setFormatter(formatter)\nlogger.addHandler(file_handler)\nverbose = False\nbypassing_hour = True\nCLEANING_ACTIVE = True\nIMAGES_DIR = '/Users/grahamwaters/Library/CloudStorage/GoogleDrive-graham.waters.business@gmail.com/My Drive/pyseas_images'",
+        "detail": "BAREBONES_pyseas",
+        "documentation": {}
+    },
+    {
+        "label": "formatter",
+        "kind": 5,
+        "importPath": "BAREBONES_pyseas",
+        "description": "BAREBONES_pyseas",
+        "peekOfCode": "formatter = logging.Formatter('%(asctime)s:%(name)s:%(levelname)s:%(message)s')\nfile_handler = logging.FileHandler('logs/pybuoy.log')\nfile_handler.setFormatter(formatter)\nlogger.addHandler(file_handler)\nverbose = False\nbypassing_hour = True\nCLEANING_ACTIVE = True\nIMAGES_DIR = '/Users/grahamwaters/Library/CloudStorage/GoogleDrive-graham.waters.business@gmail.com/My Drive/pyseas_images'\nclass BuoyCamScraper:\n    def __init__(self, image_directory, buoycam_ids):",
+        "detail": "BAREBONES_pyseas",
+        "documentation": {}
+    },
+    {
+        "label": "file_handler",
+        "kind": 5,
+        "importPath": "BAREBONES_pyseas",
+        "description": "BAREBONES_pyseas",
+        "peekOfCode": "file_handler = logging.FileHandler('logs/pybuoy.log')\nfile_handler.setFormatter(formatter)\nlogger.addHandler(file_handler)\nverbose = False\nbypassing_hour = True\nCLEANING_ACTIVE = True\nIMAGES_DIR = '/Users/grahamwaters/Library/CloudStorage/GoogleDrive-graham.waters.business@gmail.com/My Drive/pyseas_images'\nclass BuoyCamScraper:\n    def __init__(self, image_directory, buoycam_ids):\n        self.image_directory = image_directory",
+        "detail": "BAREBONES_pyseas",
+        "documentation": {}
+    },
+    {
+        "label": "verbose",
+        "kind": 5,
+        "importPath": "BAREBONES_pyseas",
+        "description": "BAREBONES_pyseas",
+        "peekOfCode": "verbose = False\nbypassing_hour = True\nCLEANING_ACTIVE = True\nIMAGES_DIR = '/Users/grahamwaters/Library/CloudStorage/GoogleDrive-graham.waters.business@gmail.com/My Drive/pyseas_images'\nclass BuoyCamScraper:\n    def __init__(self, image_directory, buoycam_ids):\n        self.image_directory = image_directory\n        self.buoycam_ids = buoycam_ids\n        os.makedirs(self.image_directory, exist_ok=True)\n    def scrape(self):",
+        "detail": "BAREBONES_pyseas",
+        "documentation": {}
+    },
+    {
+        "label": "bypassing_hour",
+        "kind": 5,
+        "importPath": "BAREBONES_pyseas",
+        "description": "BAREBONES_pyseas",
+        "peekOfCode": "bypassing_hour = True\nCLEANING_ACTIVE = True\nIMAGES_DIR = '/Users/grahamwaters/Library/CloudStorage/GoogleDrive-graham.waters.business@gmail.com/My Drive/pyseas_images'\nclass BuoyCamScraper:\n    def __init__(self, image_directory, buoycam_ids):\n        self.image_directory = image_directory\n        self.buoycam_ids = buoycam_ids\n        os.makedirs(self.image_directory, exist_ok=True)\n    def scrape(self):\n        for buoycam_id in self.buoycam_ids:",
+        "detail": "BAREBONES_pyseas",
+        "documentation": {}
+    },
+    {
+        "label": "CLEANING_ACTIVE",
+        "kind": 5,
+        "importPath": "BAREBONES_pyseas",
+        "description": "BAREBONES_pyseas",
+        "peekOfCode": "CLEANING_ACTIVE = True\nIMAGES_DIR = '/Users/grahamwaters/Library/CloudStorage/GoogleDrive-graham.waters.business@gmail.com/My Drive/pyseas_images'\nclass BuoyCamScraper:\n    def __init__(self, image_directory, buoycam_ids):\n        self.image_directory = image_directory\n        self.buoycam_ids = buoycam_ids\n        os.makedirs(self.image_directory, exist_ok=True)\n    def scrape(self):\n        for buoycam_id in self.buoycam_ids:\n            self._scrape_single_buoycam(buoycam_id)",
+        "detail": "BAREBONES_pyseas",
+        "documentation": {}
+    },
+    {
+        "label": "IMAGES_DIR",
+        "kind": 5,
+        "importPath": "BAREBONES_pyseas",
+        "description": "BAREBONES_pyseas",
+        "peekOfCode": "IMAGES_DIR = '/Users/grahamwaters/Library/CloudStorage/GoogleDrive-graham.waters.business@gmail.com/My Drive/pyseas_images'\nclass BuoyCamScraper:\n    def __init__(self, image_directory, buoycam_ids):\n        self.image_directory = image_directory\n        self.buoycam_ids = buoycam_ids\n        os.makedirs(self.image_directory, exist_ok=True)\n    def scrape(self):\n        for buoycam_id in self.buoycam_ids:\n            self._scrape_single_buoycam(buoycam_id)\n    def _scrape_single_buoycam(self, buoycam_id):",
+        "detail": "BAREBONES_pyseas",
         "documentation": {}
     },
     {
@@ -4221,6 +4978,69 @@
         "description": "dev",
         "peekOfCode": "root_directory = 'images/buoys'\n# if the duplicate csv files don't exist, then search for the extreme images and duplicates and save them as csv files\n# if the duplicate csv files do exist, then read them in\n#& Extreme Images\nif not os.path.exists('extreme_images.csv') or REDO:\n    extreme_images = find_extreme_images(root_directory)\n    # save the file paths for all extreme images as a csv\nelse:\n    extreme_images = {'white': [], 'black': []}\n    with open('extreme_images.csv', 'r') as f:",
         "detail": "dev",
+        "documentation": {}
+    },
+    {
+        "label": "PanelProcessor",
+        "kind": 6,
+        "importPath": "dev_horizon",
+        "description": "dev_horizon",
+        "peekOfCode": "class PanelProcessor:\n    def __init__(self, panel):\n        self.panel = panel\n        self.gray_panel = cv2.cvtColor(self.panel, cv2.COLOR_BGR2GRAY)  # Convert to grayscale here\n        self.edge_image = None\n        self.rotated_panel = None\n    #^ From GitHub Repo\n    def detect_horizon_line(self):\n        # Apply the detection logic from the provided script\n        image_blurred = cv2.GaussianBlur(self.gray_panel, ksize=(3, 3), sigmaX=0)",
+        "detail": "dev_horizon",
+        "documentation": {}
+    },
+    {
+        "label": "ImageProcessor",
+        "kind": 6,
+        "importPath": "dev_horizon",
+        "description": "dev_horizon",
+        "peekOfCode": "class ImageProcessor:\n    def __init__(self, image_path):\n        self.image_path = image_path\n        self.image = cv2.imread(image_path)\n        self.panels = []\n        self.modified_panels = []\n    def crop_bottom_pixels(self, pixels=30):\n        self.image = self.image[:-pixels, :]\n    def split_into_panels(self):\n        panel_width = self.image.shape[1] // 6",
+        "detail": "dev_horizon",
+        "documentation": {}
+    },
+    {
+        "label": "output_dir",
+        "kind": 5,
+        "importPath": "dev_horizon",
+        "description": "dev_horizon",
+        "peekOfCode": "output_dir = 'modified_panels'\nimage_processor = ImageProcessor('images/buoys/41009/41009_20231219181439.jpg')\nimage_processor.execute()",
+        "detail": "dev_horizon",
+        "documentation": {}
+    },
+    {
+        "label": "image_processor",
+        "kind": 5,
+        "importPath": "dev_horizon",
+        "description": "dev_horizon",
+        "peekOfCode": "image_processor = ImageProcessor('images/buoys/41009/41009_20231219181439.jpg')\nimage_processor.execute()",
+        "detail": "dev_horizon",
+        "documentation": {}
+    },
+    {
+        "label": "PanelProcessor",
+        "kind": 6,
+        "importPath": "dev_horizon_v2",
+        "description": "dev_horizon_v2",
+        "peekOfCode": "class PanelProcessor:\n    def __init__(self, panel):\n        self.panel = panel\n        self.gray_panel = cv2.cvtColor(panel, cv2.COLOR_BGR2GRAY)  # Convert to grayscale here\n        self.rotated_panel = None\n    def increase_contrast(self):\n        # Now we're sure that self.gray_panel is a grayscale image\n        return cv2.equalizeHist(self.gray_panel)\n    def detect_edges(self):\n        high_contrast = self.increase_contrast()",
+        "detail": "dev_horizon_v2",
+        "documentation": {}
+    },
+    {
+        "label": "ImageProcessor",
+        "kind": 6,
+        "importPath": "dev_horizon_v2",
+        "description": "dev_horizon_v2",
+        "peekOfCode": "class ImageProcessor:\n    def __init__(self, image_path):\n        self.image_path = image_path\n        self.image = cv2.imread(image_path)\n        self.panels = []\n        self.modified_panels = []\n    def crop_bottom_pixels(self, pixels=30):\n        self.image = self.image[:-pixels, :]\n    def split_into_panels(self):\n        panel_width = self.image.shape[1] // 6",
+        "detail": "dev_horizon_v2",
+        "documentation": {}
+    },
+    {
+        "label": "image_processor",
+        "kind": 5,
+        "importPath": "dev_horizon_v2",
+        "description": "dev_horizon_v2",
+        "peekOfCode": "image_processor = ImageProcessor('images/buoys/42002/42002_20231218210342.jpg')\nimage_processor.execute()",
+        "detail": "dev_horizon_v2",
         "documentation": {}
     },
     {
@@ -4350,6 +5170,87 @@
         "documentation": {}
     },
     {
+        "label": "folders",
+        "kind": 5,
+        "importPath": "generate_files_in_master",
+        "description": "generate_files_in_master",
+        "peekOfCode": "folders = [\n    'master_folder',\n    'master_folder/config',\n    'master_folder/utils',\n    'master_folder/logs',\n    'master_folder/images',\n    'master_folder/images/buoys',\n    'master_folder/images/save_images',\n    'master_folder/panels'\n]",
+        "detail": "generate_files_in_master",
+        "documentation": {}
+    },
+    {
+        "label": "files",
+        "kind": 5,
+        "importPath": "generate_files_in_master",
+        "description": "generate_files_in_master",
+        "peekOfCode": "files = [\n    'master_folder/config.py',\n    'master_folder/scraper.py',\n    'master_folder/image_processor.py',\n    'master_folder/logger.py',\n    'master_folder/scheduled_tasks.py',\n    'master_folder/run_schedule.py',\n    'master_folder/main.py',\n    'master_folder/utils/duplicate_removal.py',\n    'master_folder/utils/white_image_removal.py'",
+        "detail": "generate_files_in_master",
+        "documentation": {}
+    },
+    {
+        "label": "cut_into_panels",
+        "kind": 2,
+        "importPath": "horizon",
+        "description": "horizon",
+        "peekOfCode": "def cut_into_panels(image):\n    \"\"\"\n    Cut a raw image into 6 panels horizontally.\n    :param image: The rotated image.\n    :return: A list of images, each containing a single panel.\n    \"\"\"\n    # Get the dimensions of the image\n    height, width = image.shape[:2]\n    # Calculate the width of each panel\n    panel_width = width // 6",
+        "detail": "horizon",
+        "documentation": {}
+    },
+    {
+        "label": "find_horizon_line",
+        "kind": 2,
+        "importPath": "horizon",
+        "description": "horizon",
+        "peekOfCode": "def find_horizon_line(edge_img):\n    \"\"\"\n    Find the most prominent horizon line in an edge-detected image and return the angle to rotate the image.\n    The horizon line is assumed to be the longest line near the horizontal orientation.\n    :param edge_img: Edge-detected input image.\n    :return: The angle in degrees to rotate the original image.\n    \"\"\"\n    # Detect lines in the image using the Hough Transform\n    lines = cv2.HoughLines(edge_img, 1, np.pi / 180, 150)\n    if lines is not None:",
+        "detail": "horizon",
+        "documentation": {}
+    },
+    {
+        "label": "rotate_image",
+        "kind": 2,
+        "importPath": "horizon",
+        "description": "horizon",
+        "peekOfCode": "def rotate_image(image, angle):\n    (h, w) = image.shape[:2]\n    center = (w // 2, h // 2)\n    M = cv2.getRotationMatrix2D(center, angle, 1.0)\n    rotated = cv2.warpAffine(image, M, (w, h))\n    print(f'Rotation Data: \\n\\tangle = {angle}\\n\\tcenter = {center}\\n\\tM = {M}')\n    return rotated\ndef adaptive_cropping(image):\n    \"\"\"\n    Crop an image by finding the row that is closest to the bottom of the image that is NOT black and crop the image from there.",
+        "detail": "horizon",
+        "documentation": {}
+    },
+    {
+        "label": "adaptive_cropping",
+        "kind": 2,
+        "importPath": "horizon",
+        "description": "horizon",
+        "peekOfCode": "def adaptive_cropping(image):\n    \"\"\"\n    Crop an image by finding the row that is closest to the bottom of the image that is NOT black and crop the image from there.\n    # Example usage:\n    # Load the image\n    image_path = 'path_to_your_image.jpg'\n    image = cv2.imread(image_path)\n    # Crop the image\n    cropped_image = adaptive_cropping(image)\n    # Save the cropped image or proceed with other operations",
+        "detail": "horizon",
+        "documentation": {}
+    },
+    {
+        "label": "process_panel_image",
+        "kind": 2,
+        "importPath": "horizon",
+        "description": "horizon",
+        "peekOfCode": "def process_panel_image(panel, panel_index, output_dir='modified_panels'):\n    \"\"\"\n    Process a single panel image by cropping, rotating, and saving it.\n    :param panel: The panel image to process.\n    :param panel_index: The index of the panel for naming the saved file.\n    :param output_dir: The directory where the processed panel will be saved.\n    \"\"\"\n    # Crop out the bottom banner\n    # cropped_panel = panel[:-37, :]  # Assuming the banner is 37 pixels high\n    #note: make this adaptive. Find the pixel that is closest to the bottom of the image that is NOT black and crop the image from there",
+        "detail": "horizon",
+        "documentation": {}
+    },
+    {
+        "label": "process_image",
+        "kind": 2,
+        "importPath": "horizon",
+        "description": "horizon",
+        "peekOfCode": "def process_image(image_path):\n    # Load the image to cut into panels\n    image = cv2.imread(image_path)\n    # Cut the image into panels\n    panels = cut_into_panels(image)\n    # Process each panel and save it\n    for i, panel in enumerate(panels):\n        process_panel_image(panel, i)\n        print(f\"Processed panel {i}\")\n# Call process_image with the path to your image",
+        "detail": "horizon",
+        "documentation": {}
+    },
+    {
+        "label": "detect_horizon_line",
+        "kind": 2,
+        "importPath": "horizon_utils",
+        "description": "horizon_utils",
+        "peekOfCode": "def detect_horizon_line(image_grayscaled):\n    \"\"\"Detect the horizon's starting and ending points in the given image\n    The horizon line is detected by applying Otsu's threshold method to\n    separate the sky from the remainder of the image.\n    :param image_grayscaled: grayscaled image to detect the horizon on, of\n     shape (height, width)\n    :type image_grayscale: np.ndarray of dtype uint8\n    :return: the (x1, x2, y1, y2) coordinates for the starting and ending\n     points of the detected horizon line\n    :rtype: tuple(int)",
+        "detail": "horizon_utils",
+        "documentation": {}
+    },
+    {
         "label": "is_valid_image",
         "kind": 2,
         "importPath": "image_processor",
@@ -4386,6 +5287,15 @@
         "documentation": {}
     },
     {
+        "label": "remove_duplicates_from_csv",
+        "kind": 2,
+        "importPath": "import pandas as pd",
+        "description": "import pandas as pd",
+        "peekOfCode": "def remove_duplicates_from_csv(csv_file):\n    \"\"\"\n    Remove duplicate images based on entries in a CSV file.\n    Assumes the CSV has columns 'image1' and 'image2'.\n    \"\"\"\n    # Read the CSV file containing duplicates\n    df = pd.read_csv(csv_file)\n    # Iterate through each pair of duplicates\n    for _, row in tqdm(df.iterrows(), desc=\"Processing duplicates\", total=len(df)):\n        # Remove the second image in each duplicate pair",
+        "detail": "import pandas as pd",
+        "documentation": {}
+    },
+    {
         "label": "setup_logger",
         "kind": 2,
         "importPath": "logger",
@@ -4401,6 +5311,24 @@
         "description": "main",
         "peekOfCode": "def main():\n    while True:\n        current_hour = datetime.utcnow().hour\n        if 4 <= current_hour <= 24:\n            with concurrent.futures.ThreadPoolExecutor() as executor:\n                results = executor.map(scrape_single_buoycam, BUOYCAM_IDS)\n                for result, buoycam_id in zip(results, BUOYCAM_IDS):\n                    if result:\n                        executor.submit(process_images, result, buoycam_id)\n            for i in tqdm(range(0, INTERVAL * 60)):",
         "detail": "main",
+        "documentation": {}
+    },
+    {
+        "label": "detect_horizon_line",
+        "kind": 2,
+        "importPath": "main_horizondetection",
+        "description": "main_horizondetection",
+        "peekOfCode": "def detect_horizon_line(image_grayscaled):\n    \"\"\"Detect the horizon's starting and ending points in the given image\n    The horizon line is detected by applying Otsu's threshold method to\n    separate the sky from the remainder of the image.\n    :param image_grayscaled: grayscaled image to detect the horizon on, of\n     shape (height, width)\n    :type image_grayscale: np.ndarray of dtype uint8\n    :return: the (x1, x2, y1, y2) coordinates for the starting and ending\n     points of the detected horizon line\n    :rtype: tuple(int)",
+        "detail": "main_horizondetection",
+        "documentation": {}
+    },
+    {
+        "label": "main",
+        "kind": 2,
+        "importPath": "main_horizondetection",
+        "description": "main_horizondetection",
+        "peekOfCode": "def main():\n    \"\"\"Main logic\"\"\"\n    args = parse_args()\n    dirpath_input_images = args.dirpath_input_images\n    dirpath_output_images = args.dirpath_output_images\n    msg = ('`dirpath_input_images` and `dirpath_output_images` cannot point to'\n           'the same directory.')\n    assert dirpath_input_images != dirpath_output_images, msg\n    os.mkdir(dirpath_output_images)\n    for fname_image in os.listdir(dirpath_input_images):",
+        "detail": "main_horizondetection",
         "documentation": {}
     },
     {
@@ -4444,7 +5372,7 @@
         "kind": 5,
         "importPath": "pybuoy_final",
         "description": "pybuoy_final",
-        "peekOfCode": "formatter = logging.Formatter('%(asctime)s:%(name)s:%(levelname)s:%(message)s')\nfile_handler = logging.FileHandler('logs/pybuoy.log')\nfile_handler.setFormatter(formatter)\nlogger.addHandler(file_handler)\n# Globals\nverbose = False # this is a boolean value that will be used to print out more information to the console\nbypassing_hour = True #^ This is a boolean value that will be used to bypass the hour if it is not between the start and end hours\nCLEANING_ACTIVE = True #^ This is a boolean value that will be used to determine if the cleaning function is active or not\nIMAGES_DIR = '/Volumes/THEVAULT/IMAGES' #^ This is the directory where the images will be saved\n# Main execution",
+        "peekOfCode": "formatter = logging.Formatter('%(asctime)s:%(name)s:%(levelname)s:%(message)s')\nfile_handler = logging.FileHandler('logs/pybuoy.log')\nfile_handler.setFormatter(formatter)\nlogger.addHandler(file_handler)\n# Globals\nverbose = False # this is a boolean value that will be used to print out more information to the console\nbypassing_hour = True #^ This is a boolean value that will be used to bypass the hour if it is not between the start and end hours\nCLEANING_ACTIVE = True #^ This is a boolean value that will be used to determine if the cleaning function is active or not\nIMAGES_DIR = '/Users/grahamwaters/Library/CloudStorage/GoogleDrive-graham.waters.business@gmail.com/My Drive/pyseas_images' #^ This is the directory where the images will be saved\n# Main execution",
         "detail": "pybuoy_final",
         "documentation": {}
     },
@@ -4453,7 +5381,7 @@
         "kind": 5,
         "importPath": "pybuoy_final",
         "description": "pybuoy_final",
-        "peekOfCode": "file_handler = logging.FileHandler('logs/pybuoy.log')\nfile_handler.setFormatter(formatter)\nlogger.addHandler(file_handler)\n# Globals\nverbose = False # this is a boolean value that will be used to print out more information to the console\nbypassing_hour = True #^ This is a boolean value that will be used to bypass the hour if it is not between the start and end hours\nCLEANING_ACTIVE = True #^ This is a boolean value that will be used to determine if the cleaning function is active or not\nIMAGES_DIR = '/Volumes/THEVAULT/IMAGES' #^ This is the directory where the images will be saved\n# Main execution\nclass BuoyCamScraper:",
+        "peekOfCode": "file_handler = logging.FileHandler('logs/pybuoy.log')\nfile_handler.setFormatter(formatter)\nlogger.addHandler(file_handler)\n# Globals\nverbose = False # this is a boolean value that will be used to print out more information to the console\nbypassing_hour = True #^ This is a boolean value that will be used to bypass the hour if it is not between the start and end hours\nCLEANING_ACTIVE = True #^ This is a boolean value that will be used to determine if the cleaning function is active or not\nIMAGES_DIR = '/Users/grahamwaters/Library/CloudStorage/GoogleDrive-graham.waters.business@gmail.com/My Drive/pyseas_images' #^ This is the directory where the images will be saved\n# Main execution\nclass BuoyCamScraper:",
         "detail": "pybuoy_final",
         "documentation": {}
     },
@@ -4462,7 +5390,7 @@
         "kind": 5,
         "importPath": "pybuoy_final",
         "description": "pybuoy_final",
-        "peekOfCode": "verbose = False # this is a boolean value that will be used to print out more information to the console\nbypassing_hour = True #^ This is a boolean value that will be used to bypass the hour if it is not between the start and end hours\nCLEANING_ACTIVE = True #^ This is a boolean value that will be used to determine if the cleaning function is active or not\nIMAGES_DIR = '/Volumes/THEVAULT/IMAGES' #^ This is the directory where the images will be saved\n# Main execution\nclass BuoyCamScraper:\n    def __init__(self, image_directory, buoycam_ids):\n        \"\"\"\n        The __init__ function is called when the class is instantiated.\n        It sets up the instance of the class with all of its attributes and methods.",
+        "peekOfCode": "verbose = False # this is a boolean value that will be used to print out more information to the console\nbypassing_hour = True #^ This is a boolean value that will be used to bypass the hour if it is not between the start and end hours\nCLEANING_ACTIVE = True #^ This is a boolean value that will be used to determine if the cleaning function is active or not\nIMAGES_DIR = '/Users/grahamwaters/Library/CloudStorage/GoogleDrive-graham.waters.business@gmail.com/My Drive/pyseas_images' #^ This is the directory where the images will be saved\n# Main execution\nclass BuoyCamScraper:\n    def __init__(self, image_directory, buoycam_ids):\n        \"\"\"\n        The __init__ function is called when the class is instantiated.\n        It sets up the instance of the class with all of its attributes and methods.",
         "detail": "pybuoy_final",
         "documentation": {}
     },
@@ -4471,7 +5399,7 @@
         "kind": 5,
         "importPath": "pybuoy_final",
         "description": "pybuoy_final",
-        "peekOfCode": "bypassing_hour = True #^ This is a boolean value that will be used to bypass the hour if it is not between the start and end hours\nCLEANING_ACTIVE = True #^ This is a boolean value that will be used to determine if the cleaning function is active or not\nIMAGES_DIR = '/Volumes/THEVAULT/IMAGES' #^ This is the directory where the images will be saved\n# Main execution\nclass BuoyCamScraper:\n    def __init__(self, image_directory, buoycam_ids):\n        \"\"\"\n        The __init__ function is called when the class is instantiated.\n        It sets up the instance of the class with all of its attributes and methods.\n        :param self: Represent the instance of the class",
+        "peekOfCode": "bypassing_hour = True #^ This is a boolean value that will be used to bypass the hour if it is not between the start and end hours\nCLEANING_ACTIVE = True #^ This is a boolean value that will be used to determine if the cleaning function is active or not\nIMAGES_DIR = '/Users/grahamwaters/Library/CloudStorage/GoogleDrive-graham.waters.business@gmail.com/My Drive/pyseas_images' #^ This is the directory where the images will be saved\n# Main execution\nclass BuoyCamScraper:\n    def __init__(self, image_directory, buoycam_ids):\n        \"\"\"\n        The __init__ function is called when the class is instantiated.\n        It sets up the instance of the class with all of its attributes and methods.\n        :param self: Represent the instance of the class",
         "detail": "pybuoy_final",
         "documentation": {}
     },
@@ -4480,7 +5408,7 @@
         "kind": 5,
         "importPath": "pybuoy_final",
         "description": "pybuoy_final",
-        "peekOfCode": "CLEANING_ACTIVE = True #^ This is a boolean value that will be used to determine if the cleaning function is active or not\nIMAGES_DIR = '/Volumes/THEVAULT/IMAGES' #^ This is the directory where the images will be saved\n# Main execution\nclass BuoyCamScraper:\n    def __init__(self, image_directory, buoycam_ids):\n        \"\"\"\n        The __init__ function is called when the class is instantiated.\n        It sets up the instance of the class with all of its attributes and methods.\n        :param self: Represent the instance of the class\n        :param image_directory: Set the directory where images will be saved",
+        "peekOfCode": "CLEANING_ACTIVE = True #^ This is a boolean value that will be used to determine if the cleaning function is active or not\nIMAGES_DIR = '/Users/grahamwaters/Library/CloudStorage/GoogleDrive-graham.waters.business@gmail.com/My Drive/pyseas_images' #^ This is the directory where the images will be saved\n# Main execution\nclass BuoyCamScraper:\n    def __init__(self, image_directory, buoycam_ids):\n        \"\"\"\n        The __init__ function is called when the class is instantiated.\n        It sets up the instance of the class with all of its attributes and methods.\n        :param self: Represent the instance of the class\n        :param image_directory: Set the directory where images will be saved",
         "detail": "pybuoy_final",
         "documentation": {}
     },
@@ -4489,8 +5417,17 @@
         "kind": 5,
         "importPath": "pybuoy_final",
         "description": "pybuoy_final",
-        "peekOfCode": "IMAGES_DIR = '/Volumes/THEVAULT/IMAGES' #^ This is the directory where the images will be saved\n# Main execution\nclass BuoyCamScraper:\n    def __init__(self, image_directory, buoycam_ids):\n        \"\"\"\n        The __init__ function is called when the class is instantiated.\n        It sets up the instance of the class with all of its attributes and methods.\n        :param self: Represent the instance of the class\n        :param image_directory: Set the directory where images will be saved\n        :param buoycam_ids: Create a list of buoycam_ids",
+        "peekOfCode": "IMAGES_DIR = '/Users/grahamwaters/Library/CloudStorage/GoogleDrive-graham.waters.business@gmail.com/My Drive/pyseas_images' #^ This is the directory where the images will be saved\n# Main execution\nclass BuoyCamScraper:\n    def __init__(self, image_directory, buoycam_ids):\n        \"\"\"\n        The __init__ function is called when the class is instantiated.\n        It sets up the instance of the class with all of its attributes and methods.\n        :param self: Represent the instance of the class\n        :param image_directory: Set the directory where images will be saved\n        :param buoycam_ids: Create a list of buoycam_ids",
         "detail": "pybuoy_final",
+        "documentation": {}
+    },
+    {
+        "label": "BuoyCamScraper",
+        "kind": 6,
+        "importPath": "pyseas_refactored",
+        "description": "pyseas_refactored",
+        "peekOfCode": "class BuoyCamScraper:\n    def __init__(self):\n        self.image_directory = config.IMAGE_DIRECTORY\n        self.panel_directory = config.PANEL_DIRECTORY\n        self.collage_directory = config.COLLAGE_DIRECTORY\n        self.buoycam_ids = config.BUOYCAM_IDS\n        self.interval = config.INTERVAL\n        os.makedirs(self.image_directory, exist_ok=True)\n    def scrape(self):\n        scheduler = BlockingScheduler()",
+        "detail": "pyseas_refactored",
         "documentation": {}
     },
     {

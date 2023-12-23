@@ -92,7 +92,8 @@ ENV/
 #hazel file
 .hazellock
 
-.jpg
+# ignore any jpg images in the images folder
+/images/*.jpg
 
 /images/cv_ml_model_data
 /images
