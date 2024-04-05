@@ -10,12 +10,28 @@ import random
 REDO = True
 
 def find_extreme_images(directory, low_threshold=5, high_threshold=250):
+    """
+    The find_extreme_images function takes a directory as an argument and returns a dictionary of lists.
+    The keys are 'white' and 'black', the values are lists of paths to images that have been determined to be either
+    too white or too black, respectively. The function will recursively search through all subdirectories in the given
+    directory for .jpg files, load them into memory using OpenCV's imread() function, calculate their mean pixel value
+    using NumPy's mean() function (which is faster than iterating over each pixel), then compare it against two thresholds:
+    low_threshold (default 5) and
+
+    :param directory: Specify the directory to search for images
+    :param low_threshold: Determine if an image is mostly black
+    :param high_threshold: Determine if an image is mostly white
+    :return: A dictionary with two keys, 'white' and 'black'
+    :doc-author: Trelent
+    """
     extreme_images = {'white': [], 'black': []}
     print(f"Checking images in {len(glob.glob(f'{directory}/*'))} folders")
     for sub_dir in glob.glob(f'{directory}/*'):
         if 'panels' in sub_dir:
             continue  # Skip already vetted 'panels' subdirectory
         images = glob.glob(f'{sub_dir}/*.jpg')
+        # we only need the last 100 images realistically
+        # images = [:100] if len(images) > 100 else: pass
         for image_path in tqdm(images, desc=f"Checking images in {sub_dir}"):
             img = cv2.imread(image_path)
             if img is None:

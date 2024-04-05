@@ -22,13 +22,20 @@ def find_extreme_images(directory, low_threshold=5, high_threshold=250):
     :return: A dictionary of lists
     :doc-author: Trelent
     """
-
+    print(f'only processing the last 300 images taken')
     extreme_images = {'white': [], 'black': []}
     print(f"Checking images in {len(glob.glob(f'{directory}/*'))} folders")
     for sub_dir in glob.glob(f'{directory}/*'):
         if 'panels' in sub_dir:
             continue  # Skip already vetted 'panels' subdirectory
         images = glob.glob(f'{sub_dir}/*.jpg')
+        try:
+            if len(images) > 300:
+                images = images[:300]
+            else:
+                pass
+        except Exception:
+            pass
         for image_path in tqdm(images, desc=f"Checking images in {sub_dir}"):
             img = cv2.imread(image_path)
             if img is None:

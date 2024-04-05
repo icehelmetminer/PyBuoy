@@ -56,7 +56,7 @@ from duplicates import remove_similar_images #* this works best, requires a root
     ```
 
 #note: the log file may get large quickly, implement a size checking parallel function to take out lines from the beginning of the file if it gets too large and keep it under 1 MB
-
+#//: modified dev.py to only examine last 100 images if more than 100 in the folder.
 Further thoughts: it would be nice to sort the panoramas by id before stitching them vertically so that they remain in the same order as the original images. This would make it easier to compare the panoramas to the original images. This could be done by sorting the list of images by id before stitching them together.
 
 #todo items:
@@ -313,7 +313,6 @@ class ImageProcessor:
         :return: A numpy array of the stitched panels
         :doc-author: Trelent
         """
-
         # Ensure all panels are the same height before stitching
         max_height = max(panel.shape[0] for panel in panels)
         panels_resized = [cv2.resize(panel, (panel.shape[1], max_height), interpolation=cv2.INTER_LINEAR) for panel in panels]
@@ -335,10 +334,13 @@ class ImageProcessor:
         """
 
         ic()
-        cv2.imwrite(filename, collage)
-        # save the collage also to the temp file so that it can be displayed in the GUI
-        cv2.imwrite("temp.jpg", collage)
-        print(f"Collage saved to {filename} and to the GUI file temp.jpg")
+        if collage is not None:
+            cv2.imwrite(filename, collage)
+        else:
+            # save the collage also to the temp file so that it can be displayed in the GUI
+            # cv2.imwrite("temp.jpg", collage)
+            print(f'none type for collage image')
+        print(f"Collage saved to {filename}")
 
     def _enhance_image(self, image):
         """
@@ -415,6 +417,63 @@ class ImageProcessor:
             enhanced_image = image
 
         return enhanced_image
+
+    #^ patch one: --- Augmentation
+    def align_and_trim_panels(self, panels):
+        aligned_panels = []
+        for panel in panels:
+            angle = self._detect_horizon_angle(panel)
+            aligned_panel = self._rotate_image(panel, angle)
+            trimmed_panel = self._trim_edges(aligned_panel)
+            aligned_panels.append(trimmed_panel)
+        return aligned_panels
+
+    def _detect_horizon_angle(self, image):
+        # Use edge detection and Hough transform to find the most prominent line
+        edges = cv2.Canny(image, 50, 150)
+        lines = cv2.HoughLinesP(edges, 1, np.pi/180, threshold=100, minLineLength=100, maxLineGap=50)
+        # Calculate the angle of this line
+        angle = self._calculate_angle(lines)
+        return angle
+
+    def _rotate_image(self, image, angle):
+        # Rotate the image around its center
+        center = (image.shape[1]//2, image.shape[0]//2)
+        M = cv2.getRotationMatrix2D(center, angle, 1.0)
+        rotated_image = cv2.warpAffine(image, M, (image.shape[1], image.shape[0]))
+        return rotated_image
+
+    # def _trim_edges(self, image):
+    #     # Trim the edges based on a pre-defined trim size or by analyzing the image
+    #     trim_size = 10  # For example, trim 10 pixels from each edge
+    #     trimmed_image = image[trim_size:-trim_size, trim_size:-trim_size]
+    #     return trimmed_image
+
+    def _trim_edges(self, image):
+        # Assuming the horizon is now horizontal, determine how much to trim
+        # We would need a more sophisticated method to decide how much to trim,
+        # possibly based on the standard deviation of the edges or another metric.
+        # For now, we will trim a fixed size:
+
+        # Find non-black edge widths
+        upper_edge = np.min(np.where(image != 0)[0])
+        lower_edge = image.shape[0] - np.max(np.where(image != 0)[0])
+        left_edge = np.min(np.where(image != 0)[1])
+        right_edge = image.shape[1] - np.max(np.where(image != 0)[1])
+
+        # Trim the black edges
+        trimmed_image = image[upper_edge:-lower_edge, left_edge:-right_edge]
+        return trimmed_image
+
+    def _calculate_angle(self, lines):
+        if lines is not None:
+            angles = []
+            for line in lines:
+                x1, y1, x2, y2 = line[0]
+                angle = np.degrees(np.arctan2(y2 - y1, x2 - x1))
+                angles.append(angle)
+            return -np.median(angles)  # Negative because y-coordinates go from top to bottom
+        return 0  # No lines found, return 0 degrees
 
 
 # Main execution
