@@ -22,7 +22,7 @@ def find_extreme_images(directory, low_threshold=5, high_threshold=250):
     :return: A dictionary of lists
     :doc-author: Trelent
     """
-    print(f'only processing the last 100 images taken')
+    print(f'only processing the last 30 images taken')
     extreme_images = {'white': [], 'black': []}
     print(f"Checking images in {len(glob.glob(f'{directory}/*'))} folders")
     for sub_dir in glob.glob(f'{directory}/*'):
@@ -30,8 +30,8 @@ def find_extreme_images(directory, low_threshold=5, high_threshold=250):
             continue  # Skip already vetted 'panels' subdirectory
         images = glob.glob(f'{sub_dir}/*.jpg')
         try:
-            if len(images) > 100:
-                images = images[:100]
+            if len(images) > 30:
+                images = images[:30]
             else:
                 pass
         except Exception:

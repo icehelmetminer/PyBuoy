@@ -86,7 +86,8 @@ logger.addHandler(file_handler)
 verbose = False # this is a boolean value that will be used to print out more information to the console
 bypassing_hour = True #^ This is a boolean value that will be used to bypass the hour if it is not between the start and end hours
 CLEANING_ACTIVE = True #^ This is a boolean value that will be used to determine if the cleaning function is active or not
-IMAGES_DIR = '/Users/grahamwaters/Library/CloudStorage/GoogleDrive-graham.waters.business@gmail.com/My Drive/pyseas_images' #^ This is the directory where the images will be saved
+IMAGES_DIR = '/Users/grahamwaters/Library/CloudStorage/GoogleDrive-graham.waters.business@gmail.com/My Drive/pyseas_images' #^ This is the directory where the images will be saved÷÷
+# IMAGES_DIR ='/Volumes/Passport_2T/PySeas'
 # IMAGES_DIR = '/Volumes/Passport_2T/PySeas'
 # Main execution
 class BuoyCamScraper:
@@ -257,6 +258,10 @@ class BuoyCamScraper:
         filename = f"{buoycam_id}_{timestamp}.jpg"
         image_path = os.path.join(self.image_directory, buoycam_id, filename)
         os.makedirs(os.path.dirname(image_path), exist_ok=True)
+
+        #todo check for the image's uniqueness visually
+
+
         with open(image_path, "wb") as f:
             f.write(image_content)
         if verbose:

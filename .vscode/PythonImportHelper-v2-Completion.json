@@ -5389,7 +5389,7 @@
         "kind": 5,
         "importPath": "pybuoy_final",
         "description": "pybuoy_final",
-        "peekOfCode": "formatter = logging.Formatter('%(asctime)s:%(name)s:%(levelname)s:%(message)s')\nfile_handler = logging.FileHandler('logs/pybuoy.log')\nfile_handler.setFormatter(formatter)\nlogger.addHandler(file_handler)\n# Globals\nverbose = False # this is a boolean value that will be used to print out more information to the console\nbypassing_hour = True #^ This is a boolean value that will be used to bypass the hour if it is not between the start and end hours\nCLEANING_ACTIVE = True #^ This is a boolean value that will be used to determine if the cleaning function is active or not\nIMAGES_DIR = '/Users/grahamwaters/Library/CloudStorage/GoogleDrive-graham.waters.business@gmail.com/My Drive/pyseas_images' #^ This is the directory where the images will be saved\n# IMAGES_DIR = '/Volumes/Passport_2T/PySeas'",
+        "peekOfCode": "formatter = logging.Formatter('%(asctime)s:%(name)s:%(levelname)s:%(message)s')\nfile_handler = logging.FileHandler('logs/pybuoy.log')\nfile_handler.setFormatter(formatter)\nlogger.addHandler(file_handler)\n# Globals\nverbose = False # this is a boolean value that will be used to print out more information to the console\nbypassing_hour = True #^ This is a boolean value that will be used to bypass the hour if it is not between the start and end hours\nCLEANING_ACTIVE = True #^ This is a boolean value that will be used to determine if the cleaning function is active or not\nIMAGES_DIR = '/Users/grahamwaters/Library/CloudStorage/GoogleDrive-graham.waters.business@gmail.com/My Drive/pyseas_images' #^ This is the directory where the images will be saved÷÷\n# IMAGES_DIR ='/Volumes/Passport_2T/PySeas'",
         "detail": "pybuoy_final",
         "documentation": {}
     },
@@ -5398,7 +5398,7 @@
         "kind": 5,
         "importPath": "pybuoy_final",
         "description": "pybuoy_final",
-        "peekOfCode": "file_handler = logging.FileHandler('logs/pybuoy.log')\nfile_handler.setFormatter(formatter)\nlogger.addHandler(file_handler)\n# Globals\nverbose = False # this is a boolean value that will be used to print out more information to the console\nbypassing_hour = True #^ This is a boolean value that will be used to bypass the hour if it is not between the start and end hours\nCLEANING_ACTIVE = True #^ This is a boolean value that will be used to determine if the cleaning function is active or not\nIMAGES_DIR = '/Users/grahamwaters/Library/CloudStorage/GoogleDrive-graham.waters.business@gmail.com/My Drive/pyseas_images' #^ This is the directory where the images will be saved\n# IMAGES_DIR = '/Volumes/Passport_2T/PySeas'\n# Main execution",
+        "peekOfCode": "file_handler = logging.FileHandler('logs/pybuoy.log')\nfile_handler.setFormatter(formatter)\nlogger.addHandler(file_handler)\n# Globals\nverbose = False # this is a boolean value that will be used to print out more information to the console\nbypassing_hour = True #^ This is a boolean value that will be used to bypass the hour if it is not between the start and end hours\nCLEANING_ACTIVE = True #^ This is a boolean value that will be used to determine if the cleaning function is active or not\nIMAGES_DIR = '/Users/grahamwaters/Library/CloudStorage/GoogleDrive-graham.waters.business@gmail.com/My Drive/pyseas_images' #^ This is the directory where the images will be saved÷÷\n# IMAGES_DIR ='/Volumes/Passport_2T/PySeas'\n# IMAGES_DIR = '/Volumes/Passport_2T/PySeas'",
         "detail": "pybuoy_final",
         "documentation": {}
     },
@@ -5407,7 +5407,7 @@
         "kind": 5,
         "importPath": "pybuoy_final",
         "description": "pybuoy_final",
-        "peekOfCode": "verbose = False # this is a boolean value that will be used to print out more information to the console\nbypassing_hour = True #^ This is a boolean value that will be used to bypass the hour if it is not between the start and end hours\nCLEANING_ACTIVE = True #^ This is a boolean value that will be used to determine if the cleaning function is active or not\nIMAGES_DIR = '/Users/grahamwaters/Library/CloudStorage/GoogleDrive-graham.waters.business@gmail.com/My Drive/pyseas_images' #^ This is the directory where the images will be saved\n# IMAGES_DIR = '/Volumes/Passport_2T/PySeas'\n# Main execution\nclass BuoyCamScraper:\n    def __init__(self, image_directory, buoycam_ids):\n        \"\"\"\n        The __init__ function is called when the class is instantiated.",
+        "peekOfCode": "verbose = False # this is a boolean value that will be used to print out more information to the console\nbypassing_hour = True #^ This is a boolean value that will be used to bypass the hour if it is not between the start and end hours\nCLEANING_ACTIVE = True #^ This is a boolean value that will be used to determine if the cleaning function is active or not\nIMAGES_DIR = '/Users/grahamwaters/Library/CloudStorage/GoogleDrive-graham.waters.business@gmail.com/My Drive/pyseas_images' #^ This is the directory where the images will be saved÷÷\n# IMAGES_DIR ='/Volumes/Passport_2T/PySeas'\n# IMAGES_DIR = '/Volumes/Passport_2T/PySeas'\n# Main execution\nclass BuoyCamScraper:\n    def __init__(self, image_directory, buoycam_ids):\n        \"\"\"",
         "detail": "pybuoy_final",
         "documentation": {}
     },
@@ -5416,7 +5416,7 @@
         "kind": 5,
         "importPath": "pybuoy_final",
         "description": "pybuoy_final",
-        "peekOfCode": "bypassing_hour = True #^ This is a boolean value that will be used to bypass the hour if it is not between the start and end hours\nCLEANING_ACTIVE = True #^ This is a boolean value that will be used to determine if the cleaning function is active or not\nIMAGES_DIR = '/Users/grahamwaters/Library/CloudStorage/GoogleDrive-graham.waters.business@gmail.com/My Drive/pyseas_images' #^ This is the directory where the images will be saved\n# IMAGES_DIR = '/Volumes/Passport_2T/PySeas'\n# Main execution\nclass BuoyCamScraper:\n    def __init__(self, image_directory, buoycam_ids):\n        \"\"\"\n        The __init__ function is called when the class is instantiated.\n        It sets up the instance of the class with all of its attributes and methods.",
+        "peekOfCode": "bypassing_hour = True #^ This is a boolean value that will be used to bypass the hour if it is not between the start and end hours\nCLEANING_ACTIVE = True #^ This is a boolean value that will be used to determine if the cleaning function is active or not\nIMAGES_DIR = '/Users/grahamwaters/Library/CloudStorage/GoogleDrive-graham.waters.business@gmail.com/My Drive/pyseas_images' #^ This is the directory where the images will be saved÷÷\n# IMAGES_DIR ='/Volumes/Passport_2T/PySeas'\n# IMAGES_DIR = '/Volumes/Passport_2T/PySeas'\n# Main execution\nclass BuoyCamScraper:\n    def __init__(self, image_directory, buoycam_ids):\n        \"\"\"\n        The __init__ function is called when the class is instantiated.",
         "detail": "pybuoy_final",
         "documentation": {}
     },
@@ -5425,7 +5425,7 @@
         "kind": 5,
         "importPath": "pybuoy_final",
         "description": "pybuoy_final",
-        "peekOfCode": "CLEANING_ACTIVE = True #^ This is a boolean value that will be used to determine if the cleaning function is active or not\nIMAGES_DIR = '/Users/grahamwaters/Library/CloudStorage/GoogleDrive-graham.waters.business@gmail.com/My Drive/pyseas_images' #^ This is the directory where the images will be saved\n# IMAGES_DIR = '/Volumes/Passport_2T/PySeas'\n# Main execution\nclass BuoyCamScraper:\n    def __init__(self, image_directory, buoycam_ids):\n        \"\"\"\n        The __init__ function is called when the class is instantiated.\n        It sets up the instance of the class with all of its attributes and methods.\n        :param self: Represent the instance of the class",
+        "peekOfCode": "CLEANING_ACTIVE = True #^ This is a boolean value that will be used to determine if the cleaning function is active or not\nIMAGES_DIR = '/Users/grahamwaters/Library/CloudStorage/GoogleDrive-graham.waters.business@gmail.com/My Drive/pyseas_images' #^ This is the directory where the images will be saved÷÷\n# IMAGES_DIR ='/Volumes/Passport_2T/PySeas'\n# IMAGES_DIR = '/Volumes/Passport_2T/PySeas'\n# Main execution\nclass BuoyCamScraper:\n    def __init__(self, image_directory, buoycam_ids):\n        \"\"\"\n        The __init__ function is called when the class is instantiated.\n        It sets up the instance of the class with all of its attributes and methods.",
         "detail": "pybuoy_final",
         "documentation": {}
     },
@@ -5434,7 +5434,7 @@
         "kind": 5,
         "importPath": "pybuoy_final",
         "description": "pybuoy_final",
-        "peekOfCode": "IMAGES_DIR = '/Users/grahamwaters/Library/CloudStorage/GoogleDrive-graham.waters.business@gmail.com/My Drive/pyseas_images' #^ This is the directory where the images will be saved\n# IMAGES_DIR = '/Volumes/Passport_2T/PySeas'\n# Main execution\nclass BuoyCamScraper:\n    def __init__(self, image_directory, buoycam_ids):\n        \"\"\"\n        The __init__ function is called when the class is instantiated.\n        It sets up the instance of the class with all of its attributes and methods.\n        :param self: Represent the instance of the class\n        :param image_directory: Set the directory where images will be saved",
+        "peekOfCode": "IMAGES_DIR = '/Users/grahamwaters/Library/CloudStorage/GoogleDrive-graham.waters.business@gmail.com/My Drive/pyseas_images' #^ This is the directory where the images will be saved÷÷\n# IMAGES_DIR ='/Volumes/Passport_2T/PySeas'\n# IMAGES_DIR = '/Volumes/Passport_2T/PySeas'\n# Main execution\nclass BuoyCamScraper:\n    def __init__(self, image_directory, buoycam_ids):\n        \"\"\"\n        The __init__ function is called when the class is instantiated.\n        It sets up the instance of the class with all of its attributes and methods.\n        :param self: Represent the instance of the class",
         "detail": "pybuoy_final",
         "documentation": {}
     },
