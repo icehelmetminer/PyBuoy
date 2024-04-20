@@ -12,7 +12,7 @@ import requests
 from icecream import ic
 from tqdm import tqdm
 import random
-
+import re
 from white_image_removal import remove_whiteimages
 # from duplicate_removal import remove_duplicates, remove_duplicates_from_csv
 from duplicates import remove_similar_images #* this works best, requires a root directory to be specified
@@ -110,10 +110,12 @@ class BuoyCamScraper:
 
     def is_image_white(self, image_path):
         """
-        Determine if an image is completely white.
+        The is_image_white function takes an image path as input and returns True if the image is completely white, False otherwise.
 
-        :param image_path: Path to the image file
-        :return: True if the image is completely white, False otherwise
+        :param self: Represent the instance of the object itself
+        :param image_path: Pass the path to the image file
+        :return: True if the image is completely white, false otherwise
+        :doc-author: Trelent
         """
         with Image.open(image_path) as img:
             # Convert image to numpy array
@@ -159,7 +161,11 @@ class BuoyCamScraper:
 
     def update_buoy_ids_file(self):
         """
-        Updates the buoys_config.py file with the current list of buoycam_ids.
+        The update_buoy_ids_file function updates the buoys_config.py file with the current list of buoycam_ids.
+
+        :param self: Refer to the current instance of a class
+        :return: Nothing
+        :doc-author: Trelent
         """
         with open('buoys_config.py', 'w') as file:
             file.write("# buoys_config.py\nbuoy_ids = [\n")
@@ -169,9 +175,15 @@ class BuoyCamScraper:
 
     def scrape(self):
         """
-        Modified scrape function that uses buoy IDs from a Python module.
+        The scrape function is the main function of this module. It scrapes all buoycam images from the NOAA website and saves them to a directory specified by the user.
+
+        :param self: Refer to the current instance of the class
+        :return: A list of dictionaries, each dictionary containing the data for one buoycam
+        :doc-author: Trelent
         """
         from buoys_config import BUOYCAM_IDS as BUOYCAMS2
+        # Filter the list to remove any buoys with letters in their names
+        BUOYCAMS2 = [x for x in BUOYCAMS2 if not re.search('[a-zA-Z]', x)]
 
 
         # Assuming BUOYCAMS2 is another list of buoy IDs, possibly overlapping with PRIMARY_BUOY_IDS
@@ -238,6 +250,7 @@ class BuoyCamScraper:
                 print(f"Failed to retrieve image from buoycam {buoycam_id}")
         except Exception as e:
             logger.error(f"Failed to scrape buoycam {buoycam_id}: {e}")
+
     def _save_image(self, image_content, buoycam_id):
         """
         The _save_image function takes the image_content and buoycam_id as arguments.

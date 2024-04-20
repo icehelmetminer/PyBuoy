@@ -25,7 +25,8 @@ def find_extreme_images(directory, low_threshold=5, high_threshold=250):
     print(f'only processing the last 30 images taken')
     extreme_images = {'white': [], 'black': []}
     print(f"Checking images in {len(glob.glob(f'{directory}/*'))} folders")
-    for sub_dir in glob.glob(f'{directory}/*'):
+    len_files = len(glob.glob(f'{directory}/*'))
+    for sub_dir in tqdm(glob.glob(f'{directory}/*'), total = len_files):
         if 'panels' in sub_dir:
             continue  # Skip already vetted 'panels' subdirectory
         images = glob.glob(f'{sub_dir}/*.jpg')
@@ -36,7 +37,8 @@ def find_extreme_images(directory, low_threshold=5, high_threshold=250):
                 pass
         except Exception:
             pass
-        for image_path in tqdm(images, desc=f"Checking images in {sub_dir}"):
+        image_path = '' # init
+        for image_path in tqdm(images, desc=f"Checking {sub_dir} against image {image_path}"):
             img = cv2.imread(image_path)
             if img is None:
                 continue  # Skip if the image wasn't loaded properly
